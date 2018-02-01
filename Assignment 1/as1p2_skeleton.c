@@ -53,40 +53,44 @@ void addToJobList(char *args[])
     if (head_job == NULL)
     {
         //init the job number with 1
-        
+        job->number = 1;
         //set its pid from the global variable process_id
-        
+        job->pid = process_id;
         //cmd can be set to arg[0]
-        
+        job->cmd = args[0];
         //set the job->next to point to NULL.
-        
+        job->next = NULL;
         //set the job->spawn using time function
         job->spawn = (unsigned int)time(NULL);
         //set head_job to be the job
-        
+        head_job = job;
         //set current_job to be head_job
-        
+        current_job = head_job;
     }
 
     //Otherwise create a new job node and link the current node to it
     else
     {
         //point current_job to head_job
-        
+        current_job = head_job;
+        int i;
         //traverse the linked list to reach the last job
-       
-
-
-
+       while (current_job->next != NULL){
+           current_job = current_job->next;
+           i++;
+       }
         //init all values of the job like above num,pid,cmd.spawn
         
+        job->number = i;
+        job->pid = process_id;
+        job->cmd = args[0];
+        job->spawn = (unsigned int)time(NULL);
         
         //make next of current_job point to job
-        
+        current_job->next = job;
         //make job to be current_job
-        
+        job->next = NULL;
         //set the next of job to be NULL
-        
     }
 }
 
@@ -139,13 +143,16 @@ void listAllJobs()
     refreshJobList();
 
     //init current_job with head_job
+    current_job = head_job;
 
     //heading row print only once.
     printf("\nID\tPID\tCmd\tstatus\tspawn-time\n");
-        
-        //traverse the linked list and print using the following statement for each job
-            printf("%d\t%d\t%s\tRUNNING\t%s\n", current_job->number, current_job->pid, current_job->cmd, ctime(&(current_job->spawn)));
-           
+
+    //traverse the linked list and print using the following statement for each job
+    while(current_job != NULL){
+        printf("%d\t%d\t%s\tRUNNING\t%s\n", current_job->number, current_job->pid, current_job->cmd, ctime(&(current_job->spawn)));
+        current_job = current_job->next;
+    }
         
     return;
 }
@@ -170,15 +177,50 @@ void waitForEmptyLL(int nice, int bg)
 //function to perform word count
  int wordCount(char *filename,char* flag)
  {
-     int cnt;
-     //if flag is l 
-     //count the number of lines in the file 
-     //set it in cnt
+    int cnt;
+    //if flag is l 
+    //count the number of lines in the file 
+    //set it in cnt
+    char *cmd = "wc";
+    char *argv[4];
+    argv[0] = "ls";
+    argv[2] = filename;
+    argv[1] = flag;
+    argv[3] = NULL;
+    
+    int fd[2];
+    if (pipe(fd))
+        return 0;
+    
+    int pid = fork();
+
+    if (pid == 0) {
+        //get output from execvp and send it to parent 
+        //close stdout so child doesn't write to it
+        close(1);
+
+        //place write end of pipe in 1 (where a stdout would've been sent to)
+        dup(fd[1]);
+        execvp(cmd, argv);
+    }
+    else {
+        char outputFromLs[1];
+
+        //read from the "read-end" of the pipe
+        read(fd[0], outputFromLs, 1);
+        printf("%s", outputFromLs);
+    }
+    //expected command is wc -l
+     if (flag[1] == 'l'){
+    } 
 
      //if flag is w
      //count the number of words in the file
      //set it in cnt
 
+     //expected command is wc -w
+    else if (flag[1] == 'w'){
+    }
      return cnt;
  }
 
@@ -189,7 +231,8 @@ void performAugmentedWait()
     int w, rem;
     time_t now;
     srand((unsigned int)(time(&now)));
-    w = rand() % 15;
+    // w = rand() % 15;
+    w = 3;
     printf("sleeping for %d\n", w);
     rem = sleep(w);
     return;
@@ -205,11 +248,13 @@ int waitforjob(char *jobnc)
     trv = head_job;
     //traverse through linked list and find the corresponding job
     //hint : traversal done in other functions too
-    
+    while(trv != NULL){
         //if correspoding job is found 
         //use its pid to make the parent process wait.
         //waitpid with proper argument needed here
-    
+
+    }
+        
     return 0;
 }
 
@@ -336,6 +381,7 @@ int main(void)
         }
         else if (!strcmp("pwd", args[0]))
         {
+            // getcwd();
             //use getcwd and print the current working directory
             
         }
@@ -399,8 +445,8 @@ int main(void)
                     //while you use open (man 2 open) to open file
 
                     //set ">" and redirected filename to NULL
-                    args[0] = NULL;
-                    args[0 + 1] = NULL;
+                    // args[i] = NULL;
+                    // args[i + 1] = NULL;
 
                     //run your command
                     execvp(args[0], args);
