@@ -6,7 +6,7 @@
     "isShellCommand": true,
     "args": [
         "-g",
-        "as1p2_skeleton.c"
+        "as1p2.c"
     ],
     "showOutput": "always",
 }
