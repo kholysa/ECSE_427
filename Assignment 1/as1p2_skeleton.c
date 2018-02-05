@@ -73,7 +73,7 @@ void addToJobList(char *args[])
     {
         //point current_job to head_job
         current_job = head_job;
-        int i;
+        int i=2;
         //traverse the linked list to reach the last job
        while (current_job->next != NULL){
            current_job = current_job->next;
@@ -89,8 +89,9 @@ void addToJobList(char *args[])
         //make next of current_job point to job
         current_job->next = job;
         //make job to be current_job
-        job->next = NULL;
+        current_job = job;
         //set the next of job to be NULL
+        job->next = NULL;
     }
 }
 
@@ -111,23 +112,46 @@ void refreshJobList()
     current_job = head_job;
     prev_job = head_job;
 
+    // while (current_job !=)
     //traverse through the linked list
     while (current_job != NULL)
     {
         //use waitpid to init ret_pid variable
         ret_pid = waitpid(current_job->pid, NULL, WNOHANG);
         //one of the below needs node removal from linked list
+
+        //when ret-pid is 0, the cchild process (job) hasn't finished, so we just move forward in the jobs list        
         if (ret_pid == 0)
         {
-            //what does this mean
-            //do the needful
-            
+            //move the prev-job forward
+            prev_job = current_job;
+            //move the current job forward
+            current_job = current_job->next;
+
         }
+
+        //else, the child process (current-job) has completed, so we need to remove it from the list
         else
         {
             //what does this mean
             //do the needful
+            if (current_job == head_job) {
+                head_job = current_job->next;
+
+                //move the prev-job forward
+                prev_job = head_job;
+                //move the current job forward
+                current_job = current_job->next;
             
+            } else {
+                prev_job->next = current_job->next;
+
+                //move the prev-job forward
+                //move the current job forward
+                current_job = current_job->next;
+            }
+            
+
         }
     }
     return;
@@ -211,17 +235,12 @@ void waitForEmptyLL(int nice, int bg)
         printf("%s", outputFromLs);
     }
     //expected command is wc -l
-     if (flag[1] == 'l'){
-    } 
-
-     //if flag is w
-     //count the number of words in the file
-     //set it in cnt
+    //if flag is w
+    //count the number of words in the file
+    //set it in cnt
 
      //expected command is wc -w
-    else if (flag[1] == 'w'){
-    }
-     return cnt;
+    return cnt;
  }
 
 // function to augment waiting times for a process
@@ -232,7 +251,7 @@ void performAugmentedWait()
     time_t now;
     srand((unsigned int)(time(&now)));
     // w = rand() % 15;
-    w = 3;
+    w = 10;
     printf("sleeping for %d\n", w);
     rem = sleep(w);
     return;
@@ -370,18 +389,27 @@ int main(void)
         else if (!strcmp("cd", args[0]))
         {
             int result = 0;
+            if(args[1] == NULL){
+                chdir(getenv("HOME"));
+            }
             // if no destination directory given 
             // change to home directory 
-
+            else if (chdir(args[1]) == -1){
+                printf("Directory does not exist");
+            }
             //if given directory does not exist
             //print directory does not exit
-
+            else {
+                chdir(args[1]); 
+            }
             //if everthing is fine 
             //change to destination directory 
         }
         else if (!strcmp("pwd", args[0]))
-        {
-            // getcwd();
+        { 
+            char cwd[1024];
+            getcwd(cwd, sizeof(cwd));
+            printf("%s", cwd);
             //use getcwd and print the current working directory
             
         }
@@ -413,7 +441,9 @@ int main(void)
                 printf("inside the parent\n");
                 if (bg == 0)
                 {
-                    //FOREGROUND
+                    // int status;
+                    // waitpid(process_id, status, WNOHANG);
+                    // //FOREGROUND
                     // waitpid with proper argument required
                 }
                 else
@@ -421,7 +451,8 @@ int main(void)
                     //BACKGROUND
                     process_id = pid;
                     addToJobList(args);
-                    // waitpid with proper argument required
+                    // waitpid(pid, status, WNOHANG);
+                    // // waitpid with proper argument required
                 }
             }
             else
