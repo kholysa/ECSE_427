@@ -250,8 +250,7 @@ void performAugmentedWait()
     int w, rem;
     time_t now;
     srand((unsigned int)(time(&now)));
-    // w = rand() % 15;
-    w = 10;
+    w = rand() % 15;
     printf("sleeping for %d\n", w);
     rem = sleep(w);
     return;
@@ -268,7 +267,14 @@ int waitforjob(char *jobnc)
     //traverse through linked list and find the corresponding job
     //hint : traversal done in other functions too
     while(trv != NULL){
-        //if correspoding job is found 
+        //if correspoding job is found
+        if (trv->number != jobn){
+            trv = trv->next;
+        } else {
+            process_id = trv->pid;
+            waitpid(trv->pid,NULL,WNOHANG);
+            break;
+        }
         //use its pid to make the parent process wait.
         //waitpid with proper argument needed here
 
@@ -384,6 +390,7 @@ int main(void)
         else if (!strcmp("fg", args[0]))
         {
             //bring a background process to foregrounf
+            printf("Bringing job %s to the foreground", args[1]);
             waitforjob(args[1]);
         }
         else if (!strcmp("cd", args[0]))
@@ -429,6 +436,7 @@ int main(void)
 
 
             //hint : samosas are nice but often there 
+            waitForEmptyLL(nice, bg);
             //is a long waiting line for it.
 
             //create a child
@@ -441,8 +449,8 @@ int main(void)
                 printf("inside the parent\n");
                 if (bg == 0)
                 {
-                    // int status;
-                    // waitpid(process_id, status, WNOHANG);
+                    //we want to wait for the foreground-ed process id 
+                    waitpid(process_id, NULL, WNOHANG);
                     // //FOREGROUND
                     // waitpid with proper argument required
                 }
@@ -451,8 +459,9 @@ int main(void)
                     //BACKGROUND
                     process_id = pid;
                     addToJobList(args);
-                    // waitpid(pid, status, WNOHANG);
-                    // // waitpid with proper argument required
+                    //wait on parent
+                    waitpid(process_id, NULL, WNOHANG);
+                    // waitpid with proper argument required
                 }
             }
             else
@@ -465,19 +474,35 @@ int main(void)
                 //check for redirection
                 //now you know what does args store
                 //check if args has ">"
+                if(args[1] != NULL && args[2] != NULL){
+                    if(strcmp(">", args[1]))
+                        isred = 1;
+                     else
+                        isred = 0;
+                }
                 //if yes set isred to 1
                 //else set isred to 0
 
                 //if redirection is enabled
                 if (isred == 1)
                 {
-                    //open file and change output from stdout to that  
+                    //open file and change output from stdout to that
+                    FILE *redirectedOutput = fopen(args[2], "w");
+                    printf("%s",args[2]);
+                    //getting fileDescriptor value for newly created txt file
+                    int fileDescriptor = open(args[2], O_WRONLY);
+                    //making a copy of the stdout file descriptor
+                    int stdOutCopy = dup(1);
+
+                    int pipedFileDescriptors = dup2(fileDescriptor, 1);
+                    if (pipedFileDescriptors < 0)
+                        return 0;                    
                     //make sure you use all the read write exec authorisation flags
                     //while you use open (man 2 open) to open file
 
                     //set ">" and redirected filename to NULL
-                    // args[i] = NULL;
-                    // args[i + 1] = NULL;
+                    args[1] = NULL;
+                    args[2] = NULL;
 
                     //run your command
                     execvp(args[0], args);
