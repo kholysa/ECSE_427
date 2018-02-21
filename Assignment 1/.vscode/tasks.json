@@ -6,7 +6,7 @@
     "isShellCommand": true,
     "args": [
         "-g",
-        "as1p2.c"
+        "a1_redirect.c"
     ],
     "showOutput": "always",
 }
