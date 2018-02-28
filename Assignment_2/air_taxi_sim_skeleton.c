@@ -10,8 +10,8 @@
  */
 
 //Please enter your name and McGill ID below
-//Name: <your name>
-//McGill ID: <magic number>
+//Name: <Saif Elkholy>
+//McGill ID: <260606967>
 
  
 
@@ -21,11 +21,15 @@
 #include <unistd.h>
 #include <limits.h>
 #include <semaphore.h>
+//Added by me to have true defined by default
+#include <stdbool.h>
 
 
 int BUFFER_SIZE = 100; //size of queue
-
-
+// int INT_MIN = 0;
+sem_t FULL;  
+sem_t EMPTY; 
+pthread_mutex_t MUTEX = PTHREAD_MUTEX_INITIALIZER;
 
 // A structure to represent a queue
 struct Queue
@@ -76,7 +80,7 @@ void enqueue(struct Queue* queue, int item)
 int dequeue(struct Queue* queue)
 {
     if (isEmpty(queue))
-        return INT_MIN;
+        return 10;
     int item = queue->array[queue->front];
     queue->front = (queue->front + 1)%queue->capacity;
     queue->size = queue->size - 1;
@@ -87,7 +91,7 @@ int dequeue(struct Queue* queue)
 int front(struct Queue* queue)
 {
     if (isEmpty(queue))
-        return INT_MIN;
+        return 0;
     return queue->array[queue->front];
 }
  
@@ -95,7 +99,7 @@ int front(struct Queue* queue)
 int rear(struct Queue* queue)
 {
     if (isEmpty(queue))
-        return INT_MIN;
+        return 10;
     return queue->array[queue->rear];
 }
 
@@ -116,11 +120,33 @@ struct Queue* queue;
 /*Producer Function: Simulates an Airplane arriving and dumping 5-10 passengers to the taxi platform */
 void *FnAirplane(void* cl_id)
 {
+    int *planeId = (int *)cl_id;
+    while( true ){
+        printf("Airplane %d arrives\n", *planeId); 
+        int randomNumberOfPassengers = (rand()%5 + 5);
+        for(int i=0; i < randomNumberOfPassengers; i++){
+            //forloop
+            //add random number of passengers to queue, and print out their Ids
+            //wait buffer mutex
+            pthread_mutex_lock(&MUTEX);
+            int passengerId = rear(queue) +1;
+            enqueue(queue, passengerId);
+            pthread_mutex_unlock(&MUTEX);
+            printf("Passenger %d of airplane %d arrives to platform\n", passengerId, *planeId);
+            if (isFull(queue)){
+                printf("Platform is full: Rest of passengers of plane %d take the bus\n", *planeId);
+                break;
+            }  
+        }
+    }
 }
 
 /* Consumer Function: simulates a taxi that takes n time to take a passenger home and come back to the airport */
 void *FnTaxi(void* pr_id)
 {
+    while(true){
+        printf("Taxi driver %p arrives", pr_id);   
+    }
 }
 
 int main(int argc, char *argv[])
@@ -140,14 +166,33 @@ int main(int argc, char *argv[])
   queue = createQueue(BUFFER_SIZE);
   
   //declare arrays of threads and initialize semaphore(s)
+  pthread_t taxiThreads[num_taxis];
+  pthread_t airplaneThreads[num_airplanes];
+
+  pthread_mutex_init(&MUTEX, NULL);
+
+  //producer semaphore, will be initialised to the max buffer size
+  // will be incremented by n each time a plane adds n people to buffer/queue
+  //or will be decremented by n each time a taxi takes n people to buffer/queue
+  sem_init(&FULL,0,BUFFER_SIZE); 
+
+  //consumer semaphore, will be initialised to the 0
+  // will be incremented by n each time a taxi takes n people to buffer/queue
+  //or will be decremented by n each time a plane adds n people to buffer/queue
+  sem_init(&EMPTY,0,0);
 
   //create arrays of integer pointers to ids for taxi / airplane threads
   int *taxi_ids[num_taxis];
   int *airplane_ids[num_airplanes];
     
   //create threads for airplanes
-
+    for(int i=0; i < num_airplanes; i++){
+        printf("Creating airplane thread %d\n", i);
+        pthread_create(&airplaneThreads[i], NULL, FnAirplane, &i);
+    }
   //create threads for taxis
-  
+    for(int j =0; j < num_taxis; j++) {
+
+    }
   pthread_exit(NULL);
 }

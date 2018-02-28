@@ -6,7 +6,8 @@
     "isShellCommand": true,
     "args": [
         "-g",
-        "a1_redirect.c"
+        "air_taxi_sim_skeleton.c",
+        "-lpthread"        
     ],
     "showOutput": "always",
 }
