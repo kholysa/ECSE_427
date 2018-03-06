@@ -5,9 +5,8 @@
     "command": "gcc",
     "isShellCommand": true,
     "args": [
-        "-g",
         "air_taxi_sim_skeleton.c",
-        "-lpthread"        
+        "-pthread"
     ],
     "showOutput": "always",
 }
