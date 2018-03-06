@@ -144,8 +144,7 @@ void *FnAirplane(void* cl_id)
             //wait buffer mutex
             if (isFull(queue)){
                 printf("Platform is full: Rest of passengers of plane %d take the bus\n", *planeId);
-                while(isFull(queue))
-                    continue;
+                break;
             }
             sem_wait(&EMPTY);
             pthread_mutex_lock(&MUTEX);
