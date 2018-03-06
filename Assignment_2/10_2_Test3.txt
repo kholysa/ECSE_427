@@ -1,71 +1,74 @@
-You entered: 10 airplanes per hour
+saif@S-Machine:~/ECSE_427/Assignment_2$ ./a.out 10 2You entered: 10 airplanes per hour
 You entered: 2 taxis
 Creating airplane thread 0
 Creating airplane thread 1
-Creating airplane thread 2
 Airplane 0 arrives
-Creating airplane thread 3
 1000001 enqueued to queue
 Passenger 1000001 of airplane 0 arrives to platform
-1000002 enqueued to queue
-Passenger 1000002 of airplane 0 arrives to platform
-1000003 enqueued to queue
-Passenger 1000003 of airplane 0 arrives to platform
-1000004 enqueued to queue
-Passenger 1000004 of airplane 0 arrives to platform
-1000005 enqueued to queue
-Passenger 1000005 of airplane 0 arrives to platform
-1000006 enqueued to queue
-Passenger 1000006 of airplane 0 arrives to platform
-1000007 enqueued to queue
-Passenger 1000007 of airplane 0 arrives to platform
-1000008 enqueued to queue
-Passenger 1000008 of airplane 0 arrives to platform
+Creating airplane thread 2
 Airplane 1 arrives
-1001009 enqueued to queue
-Passenger 1001009 of airplane 1 arrives to platform
-1001010 enqueued to queue
-Passenger 1001010 of airplane 1 arrives to platform
-1001011 enqueued to queue
-Passenger 1001011 of airplane 1 arrives to platform
-1001012 enqueued to queue
-Passenger 1001012 of airplane 1 arrives to platform
-1001013 enqueued to queue
-Passenger 1001013 of airplane 1 arrives to platform
-1001014 enqueued to queue
-Passenger 1001014 of airplane 1 arrives to platform
+1001002 enqueued to queue
+Passenger 1001002 of airplane 1 arrives to platform1001003 enqueued to queue
+Passenger 1001003 of airplane 1 arrives to platform
+1001004 enqueued to queue
+Passenger 1001004 of airplane 1 arrives to platform
+1001005 enqueued to queue
+Passenger 1001005 of airplane 1 arrives to platform
+Creating airplane thread 3
+1001006 enqueued to queue
+Passenger 1001006 of airplane 1 arrives to platform
 Airplane 2 arrives
-1002015 enqueued to queue
-Passenger 1002015 of airplane 2 arrives to platform
-1002016 enqueued to queue
-Passenger 1002016 of airplane 2 arrives to platform
-1002017 enqueued to queue
-Passenger 1002017 of airplane 2 arrives to platform
-1002018 enqueued to queue
-Passenger 1002018 of airplane 2 arrives to platform
-1002019 enqueued to queue
-Passenger 1002019 of airplane 2 arrives to platform
-1002020 enqueued to queue
-Passenger 1002020 of airplane 2 arrives to platform
-1002021 enqueued to queue
-Passenger 1002021 of airplane 2 arrives to platform
+1001007 enqueued to queue
 Creating airplane thread 4
 Airplane 3 arrives
-1003022 enqueued to queue
-Passenger 1003022 of airplane 3 arrives to platform
-1003023 enqueued to queue
-Passenger 1003023 of airplane 3 arrives to platform
-1003024 enqueued to queue
+Passenger 1001007 of airplane 1 arrives to platform
 Creating airplane thread 5
-Passenger 1003024 of airplane 3 arrives to platform
-1003025 enqueued to queue
-Passenger 1003025 of airplane 3 arrives to platform
-1003026 enqueued to queue
-Passenger 1003026 of airplane 3 arrives to platform
-Airplane 4 arrives
-1004027 enqueued to queue
-Passenger 1004027 of airplane 4 arrives to platform
+1003008 enqueued to queue
+Passenger 1003008 of airplane 3 arrives to platform
 Creating airplane thread 6
+Airplane 5 arrives
+1003009 enqueued to queue
+Passenger 1003009 of airplane 3 arrives to platform
+Airplane 4 arrives
+1003010 enqueued to queue
+Passenger 1003010 of airplane 3 arrives to platform
+1003011 enqueued to queue
+Passenger 1003011 of airplane 3 arrives to platform
+1003012 enqueued to queue
+Passenger 1003012 of airplane 3 arrives to platform
+1005013 enqueued to queue
+Passenger 1005013 of airplane 5 arrives to platform
+1005014 enqueued to queue
+Passenger 1005014 of airplane 5 arrives to platform
+1005015 enqueued to queue
+Passenger 1005015 of airplane 5 arrives to platform
+1005016 enqueued to queue
+Passenger 1005016 of airplane 5 arrives to platform
+1005017 enqueued to queue
+Passenger 1005017 of airplane 5 arrives to platform
+1005018 enqueued to queue
+Passenger 1005018 of airplane 5 arrives to platform
+1005019 enqueued to queue
+Passenger 1005019 of airplane 5 arrives to platform
+1005020 enqueued to queue
+Passenger 1005020 of airplane 5 arrives to platform
+1002021 enqueued to queue
+Passenger 1002021 of airplane 2 arrives to platform
+1002022 enqueued to queue
+Passenger 1002022 of airplane 2 arrives to platform
+1002023 enqueued to queue
+Passenger 1002023 of airplane 2 arrives to platform
+Creating airplane thread 7
+1002024 enqueued to queue
+Passenger 1002024 of airplane 2 arrives to platform
+1002025 enqueued to queue
+Passenger 1002025 of airplane 2 arrives to platform
+1002026 enqueued to queue
+Passenger 1002026 of airplane 2 arrives to platform
+Creating airplane thread 8
+Airplane 7 arrives
+1002027 enqueued to queue
+Passenger 1002027 of airplane 2 arrives to platform
 1004028 enqueued to queue
 Passenger 1004028 of airplane 4 arrives to platform
 1004029 enqueued to queue
@@ -76,192 +79,184 @@ Passenger 1004030 of airplane 4 arrives to platform
 Passenger 1004031 of airplane 4 arrives to platform
 1004032 enqueued to queue
 Passenger 1004032 of airplane 4 arrives to platform
-1004033 enqueued to queue
-Passenger 1004033 of airplane 4 arrives to platform
-1004034 enqueued to queue
-Passenger 1004034 of airplane 4 arrives to platform
-Creating airplane thread 7
-Airplane 6 arrives
-1006035 enqueued to queue
-Passenger 1006035 of airplane 6 arrives to platform
-1006036 enqueued to queue
-Passenger 1006036 of airplane 6 arrives to platform
-1006037 enqueued to queue
-Passenger 1006037 of airplane 6 arrives to platform
-1006038 enqueued to queue
-Passenger 1006038 of airplane 6 arrives to platform
-1006039 enqueued to queue
-Passenger 1006039 of airplane 6 arrives to platform
-Creating airplane thread 8
-Airplane 7 arrives
-1007040 enqueued to queue
-Passenger 1007040 of airplane 7 arrives to platform
-1007041 enqueued to queue
-Passenger 1007041 of airplane 7 arrives to platform
-1007042 enqueued to queue
-Passenger 1007042 of airplane 7 arrives to platform
-1007043 enqueued to queue
-Passenger 1007043 of airplane 7 arrives to platform
-1007044 enqueued to queue
-Passenger 1007044 of airplane 7 arrives to platform
-1007045 enqueued to queue
-Passenger 1007045 of airplane 7 arrives to platform
-Creating airplane thread 9
+1007033 enqueued to queue
+Passenger 1007033 of airplane 7 arrives to platform
+1007034 enqueued to queue
+Passenger 1007034 of airplane 7 arrives to platform
+1007035 enqueued to queue
+Passenger 1007035 of airplane 7 arrives to platform
+1007036 enqueued to queue
+Passenger 1007036 of airplane 7 arrives to platform
+1007037 enqueued to queue
+Passenger 1007037 of airplane 7 arrives to platform
+1007038 enqueued to queue
+Passenger 1007038 of airplane 7 arrives to platform
 Airplane 8 arrives
-1008046 enqueued to queue
-Passenger 1008046 of airplane 8 arrives to platform
-1008047 enqueued to queue
-Passenger 1008047 of airplane 8 arrives to platform
-1008048 enqueued to queue
-Passenger 1008048 of airplane 8 arrives to platform
-1008049 enqueued to queue
-Passenger 1008049 of airplane 8 arrives to platform
-1008050 enqueued to queue
-Passenger 1008050 of airplane 8 arrives to platform
+1008039 enqueued to queue
+Passenger 1008039 of airplane 8 arrives to platform
+1008040 enqueued to queue
+Passenger 1008040 of airplane 8 arrives to platform
+1008041 enqueued to queue
+Passenger 1008041 of airplane 8 arrives to platform
+1008042 enqueued to queue
+Passenger 1008042 of airplane 8 arrives to platform
+1008043 enqueued to queue
+Passenger 1008043 of airplane 8 arrives to platform
+1008044 enqueued to queue
+Passenger 1008044 of airplane 8 arrives to platform
+1008045 enqueued to queue
+Passenger 1008045 of airplane 8 arrives to platform
+1000046 enqueued to queue
+Passenger 1000046 of airplane 0 arrives to platform
+1000047 enqueued to queue
+Passenger 1000047 of airplane 0 arrives to platform
+1000048 enqueued to queue
+Passenger 1000048 of airplane 0 arrives to platform
+1000049 enqueued to queue
+Passenger 1000049 of airplane 0 arrives to platform
+1000050 enqueued to queue
+Passenger 1000050 of airplane 0 arrives to platform
+1000051 enqueued to queue
+Passenger 1000051 of airplane 0 arrives to platform
+1000052 enqueued to queue
+Passenger 1000052 of airplane 0 arrives to platform
+Airplane 6 arrives
+1006053 enqueued to queue
+Passenger 1006053 of airplane 6 arrives to platform
+1006054 enqueued to queue
+Passenger 1006054 of airplane 6 arrives to platform
+1006055 enqueued to queue
+Passenger 1006055 of airplane 6 arrives to platform
+1006056 enqueued to queue
+Passenger 1006056 of airplane 6 arrives to platform
+1006057 enqueued to queue
+Passenger 1006057 of airplane 6 arrives to platform
+1006058 enqueued to queue
+Passenger 1006058 of airplane 6 arrives to platform
+1006059 enqueued to queue
+Passenger 1006059 of airplane 6 arrives to platform
+1006060 enqueued to queue
+Passenger 1006060 of airplane 6 arrives to platform
+Creating airplane thread 9
+1006061 enqueued to queue
+Passenger 1006061 of airplane 6 arrives to platform
 Creating taxis thread 0
-1008051 enqueued to queue
-Passenger 1008051 of airplane 8 arrives to platform
-1008052 enqueued to queue
-Passenger 1008052 of airplane 8 arrives to platform
 Airplane 9 arrives
-1009053 enqueued to queue
-Passenger 1009053 of airplane 9 arrives to platform
-1009054 enqueued to queue
-Passenger 1009054 of airplane 9 arrives to platform
-1009055 enqueued to queue
-Passenger 1009055 of airplane 9 arrives to platform
-1009056 enqueued to queue
-Passenger 1009056 of airplane 9 arrives to platform
-1009057 enqueued to queue
-Passenger 1009057 of airplane 9 arrives to platform
-1009058 enqueued to queue
-Passenger 1009058 of airplane 9 arrives to platform
-1009059 enqueued to queue
-Passenger 1009059 of airplane 9 arrives to platform
-1009060 enqueued to queue
-Passenger 1009060 of airplane 9 arrives to platform
-Creating taxis thread 1
-1009061 enqueued to queue
-Passenger 1009061 of airplane 9 arrives to platform
+1009062 enqueued to queue
+Passenger 1009062 of airplane 9 arrives to platform
 Taxi driver 0 arrives
+1009063 enqueued to queue
+Passenger 1009063 of airplane 9 arrives to platform
+1009064 enqueued to queue
+Passenger 1009064 of airplane 9 arrives to platform
+1009065 enqueued to queue
+Passenger 1009065 of airplane 9 arrives to platform
+1009066 enqueued to queue
+Passenger 1009066 of airplane 9 arrives to platform
+1009067 enqueued to queue
+Passenger 1009067 of airplane 9 arrives to platform
 Taxi driver 0 picked up client 1000001 from the platform
+Creating taxis thread 1
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000002 from the platform
-Airplane 5 arrives
-1005062 enqueued to queue
-Passenger 1005062 of airplane 5 arrives to platform
-1005063 enqueued to queue
-Passenger 1005063 of airplane 5 arrives to platform
-1005064 enqueued to queue
-Passenger 1005064 of airplane 5 arrives to platform
-1005065 enqueued to queue
-Passenger 1005065 of airplane 5 arrives to platform
-1005066 enqueued to queue
-Passenger 1005066 of airplane 5 arrives to platform
-1005067 enqueued to queue
-Passenger 1005067 of airplane 5 arrives to platform
-1005068 enqueued to queue
-Passenger 1005068 of airplane 5 arrives to platform
+Taxi driver 1 picked up client 1001002 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000003 from the platform
+Taxi driver 0 picked up client 1001003 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000004 from the platform
+Taxi driver 1 picked up client 1001004 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000005 from the platform
+Taxi driver 0 picked up client 1001005 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001006 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000006 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000007 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000008 from the platform
+Taxi driver 1 picked up client 1001007 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001009 from the platform
+Taxi driver 1 picked up client 1003008 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001010 from the platform
+Taxi driver 0 picked up client 1003009 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001011 from the platform
+Taxi driver 1 picked up client 1003010 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001012 from the platform
-Airplane 0 arrives
-Airplane 2 arrives
-1000069 enqueued to queue
-Passenger 1000069 of airplane 0 arrives to platform
+Taxi driver 0 picked up client 1003011 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1003012 from the platform
 Airplane 1 arrives
-1000070 enqueued to queue
-Passenger 1000070 of airplane 0 arrives to platform
+1001068 enqueued to queue
+Passenger 1001068 of airplane 1 arrives to platform
+1001069 enqueued to queue
+Passenger 1001069 of airplane 1 arrives to platform
+1001070 enqueued to queue
+Passenger 1001070 of airplane 1 arrives to platform
+1001071 enqueued to queue
+Passenger 1001071 of airplane 1 arrives to platform
+1001072 enqueued to queue
+Passenger 1001072 of airplane 1 arrives to platform
+1001073 enqueued to queue
+Passenger 1001073 of airplane 1 arrives to platform
+1001074 enqueued to queue
+Passenger 1001074 of airplane 1 arrives to platform
 Airplane 3 arrives
-1003071 enqueued to queue
-Passenger 1003071 of airplane 3 arrives to platform
-1003072 enqueued to queue
-Passenger 1003072 of airplane 3 arrives to platform
-1003073 enqueued to queue
-Passenger 1003073 of airplane 3 arrives to platform
-1003074 enqueued to queue
-Passenger 1003074 of airplane 3 arrives to platform
 1003075 enqueued to queue
 Passenger 1003075 of airplane 3 arrives to platform
-1000076 enqueued to queue
-Passenger 1000076 of airplane 0 arrives to platform
-1000077 enqueued to queue
-Passenger 1000077 of airplane 0 arrives to platform
-1000078 enqueued to queue
-Passenger 1000078 of airplane 0 arrives to platform
-Airplane 4 arrives
-1000079 enqueued to queue
-Passenger 1000079 of airplane 0 arrives to platform
-1004080 enqueued to queue
-Passenger 1004080 of airplane 4 arrives to platform
-1000081 enqueued to queue
-Passenger 1000081 of airplane 0 arrives to platform
-1001082 enqueued to queue
-Passenger 1001082 of airplane 1 arrives to platform
-Airplane 9 arrives
-1004083 enqueued to queue
-Passenger 1004083 of airplane 4 arrives to platform
-1001084 enqueued to queue
-Passenger 1001084 of airplane 1 arrives to platform
-Airplane 6 arrives
+1003076 enqueued to queue
+Passenger 1003076 of airplane 3 arrives to platform
+1003077 enqueued to queue
+Passenger 1003077 of airplane 3 arrives to platform
+1003078 enqueued to queue
+Passenger 1003078 of airplane 3 arrives to platform
+1003079 enqueued to queue
+Passenger 1003079 of airplane 3 arrives to platform
+1003080 enqueued to queue
+Passenger 1003080 of airplane 3 arrives to platform
+1003081 enqueued to queue
+Passenger 1003081 of airplane 3 arrives to platform
+1003082 enqueued to queue
+Passenger 1003082 of airplane 3 arrives to platform
+1003083 enqueued to queue
+Passenger 1003083 of airplane 3 arrives to platform
 Airplane 5 arrives
-1001085 enqueued to queue
-Passenger 1001085 of airplane 1 arrives to platform
-Airplane 7 arrives
-1001086 enqueued to queue
-Passenger 1001086 of airplane 1 arrives to platform
-1001087 enqueued to queue
-Passenger 1001087 of airplane 1 arrives to platform
-Airplane 8 arrives
-1008088 enqueued to queue
-Passenger 1008088 of airplane 8 arrives to platform
-1008089 enqueued to queue
-Passenger 1008089 of airplane 8 arrives to platform
-1008090 enqueued to queue
-Passenger 1008090 of airplane 8 arrives to platform
-1008091 enqueued to queue
-Passenger 1008091 of airplane 8 arrives to platform
-1008092 enqueued to queue
-Passenger 1008092 of airplane 8 arrives to platform
-1008093 enqueued to queue
-Passenger 1008093 of airplane 8 arrives to platform
-1008094 enqueued to queue
-Passenger 1008094 of airplane 8 arrives to platform
+1005084 enqueued to queue
+Passenger 1005084 of airplane 5 arrives to platform
+1005085 enqueued to queue
+Passenger 1005085 of airplane 5 arrives to platform
+1005086 enqueued to queue
+Passenger 1005086 of airplane 5 arrives to platform
+1005087 enqueued to queue
+Passenger 1005087 of airplane 5 arrives to platform
+1005088 enqueued to queue
+Passenger 1005088 of airplane 5 arrives to platform
+1005089 enqueued to queue
+Passenger 1005089 of airplane 5 arrives to platform
+1005090 enqueued to queue
+Passenger 1005090 of airplane 5 arrives to platform
+Airplane 2 arrives
+1002091 enqueued to queue
+Passenger 1002091 of airplane 2 arrives to platform
+1002092 enqueued to queue
+Passenger 1002092 of airplane 2 arrives to platform
+1002093 enqueued to queue
+Passenger 1002093 of airplane 2 arrives to platform
+1002094 enqueued to queue
+Passenger 1002094 of airplane 2 arrives to platform
 1002095 enqueued to queue
 Passenger 1002095 of airplane 2 arrives to platform
-1002096 enqueued to queue
-Passenger 1002096 of airplane 2 arrives to platform
-1002097 enqueued to queue
-Passenger 1002097 of airplane 2 arrives to platform
-1002098 enqueued to queue
-Passenger 1002098 of airplane 2 arrives to platform
-1002099 enqueued to queue
-Passenger 1002099 of airplane 2 arrives to platform
-1002100 enqueued to queue
-Passenger 1002100 of airplane 2 arrives to platform
-1002101 enqueued to queue
-Passenger 1002101 of airplane 2 arrives to platform
-1002102 enqueued to queue
-Passenger 1002102 of airplane 2 arrives to platform
-1002103 enqueued to queue
-Passenger 1002103 of airplane 2 arrives to platform
+Airplane 4 arrives
+1004096 enqueued to queue
+Passenger 1004096 of airplane 4 arrives to platform
+1004097 enqueued to queue
+Passenger 1004097 of airplane 4 arrives to platform
+1004098 enqueued to queue
+Passenger 1004098 of airplane 4 arrives to platform
+1004099 enqueued to queue
+Passenger 1004099 of airplane 4 arrives to platform
+1004100 enqueued to queue
+Passenger 1004100 of airplane 4 arrives to platform
+1004101 enqueued to queue
+Passenger 1004101 of airplane 4 arrives to platform
+1004102 enqueued to queue
+Passenger 1004102 of airplane 4 arrives to platform
+Airplane 7 arrives
+1007103 enqueued to queue
+Passenger 1007103 of airplane 7 arrives to platform
 1007104 enqueued to queue
 Passenger 1007104 of airplane 7 arrives to platform
 1007105 enqueued to queue
@@ -270,54 +265,58 @@ Passenger 1007105 of airplane 7 arrives to platform
 Passenger 1007106 of airplane 7 arrives to platform
 1007107 enqueued to queue
 Passenger 1007107 of airplane 7 arrives to platform
-1006108 enqueued to queue
-Passenger 1006108 of airplane 6 arrives to platform
-1004109 enqueued to queue
-Passenger 1004109 of airplane 4 arrives to platform
-1009110 enqueued to queue
-Passenger 1009110 of airplane 9 arrives to platform
-1001111 enqueued to queue
-Passenger 1001111 of airplane 1 arrives to platform
-1005112 enqueued to queue
-Passenger 1005112 of airplane 5 arrives to platform
-Platform is full: Rest of passengers of plane 5 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001013 from the platform
-1007113 enqueued to queue
-Passenger 1007113 of airplane 7 arrives to platform
-Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001014 from the platform
-1006114 enqueued to queue
-Passenger 1006114 of airplane 6 arrives to platform
+1007108 enqueued to queue
+Passenger 1007108 of airplane 7 arrives to platform
+1007109 enqueued to queue
+Passenger 1007109 of airplane 7 arrives to platform
+1007110 enqueued to queue
+Passenger 1007110 of airplane 7 arrives to platform
+Airplane 8 arrives
+1008111 enqueued to queue
+Passenger 1008111 of airplane 8 arrives to platform
+1008112 enqueued to queue
+Passenger 1008112 of airplane 8 arrives to platform
+Platform is full: Rest of passengers of plane 8 take the bus
+Airplane 0 arrives
+Platform is full: Rest of passengers of plane 0 take the bus
+Airplane 6 arrives
 Platform is full: Rest of passengers of plane 6 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002015 from the platform
-1004115 enqueued to queue
-Passenger 1004115 of airplane 4 arrives to platform
-Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002016 from the platform
-1009116 enqueued to queue
-Passenger 1009116 of airplane 9 arrives to platform
+Airplane 9 arrives
 Platform is full: Rest of passengers of plane 9 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005013 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005014 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002017 from the platform
+Taxi driver 1 picked up client 1005015 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005016 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005017 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005018 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005019 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005020 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1002021 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1002022 from the platform
+Airplane 1 arrives
+1001113 enqueued to queue
+Passenger 1001113 of airplane 1 arrives to platform
+1001114 enqueued to queue
+Passenger 1001114 of airplane 1 arrives to platform
+1001115 enqueued to queue
+Passenger 1001115 of airplane 1 arrives to platform
+1001116 enqueued to queue
+Passenger 1001116 of airplane 1 arrives to platform
 1001117 enqueued to queue
 Passenger 1001117 of airplane 1 arrives to platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002018 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002019 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002020 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002021 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003022 from the platform
+1001118 enqueued to queue
+Passenger 1001118 of airplane 1 arrives to platform
 Airplane 3 arrives
-1003118 enqueued to queue
-Passenger 1003118 of airplane 3 arrives to platform
 1003119 enqueued to queue
 Passenger 1003119 of airplane 3 arrives to platform
 1003120 enqueued to queue
@@ -327,473 +326,468 @@ Passenger 1003121 of airplane 3 arrives to platform
 1003122 enqueued to queue
 Passenger 1003122 of airplane 3 arrives to platform
 Platform is full: Rest of passengers of plane 3 take the bus
-Airplane 0 arrives
-Platform is full: Rest of passengers of plane 0 take the bus
-Airplane 2 arrives
-Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 8 arrives
-Platform is full: Rest of passengers of plane 8 take the bus
 Airplane 5 arrives
 Platform is full: Rest of passengers of plane 5 take the bus
-Airplane 7 arrives
-Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003023 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003024 from the platform
-Airplane 6 arrives
-1006123 enqueued to queue
-Passenger 1006123 of airplane 6 arrives to platform
-1006124 enqueued to queue
-Passenger 1006124 of airplane 6 arrives to platform
-Platform is full: Rest of passengers of plane 6 take the bus
+Airplane 2 arrives
+Platform is full: Rest of passengers of plane 2 take the bus
 Airplane 4 arrives
 Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003025 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003026 from the platform
+Airplane 7 arrives
+Platform is full: Rest of passengers of plane 7 take the bus
+Airplane 8 arrives
+Platform is full: Rest of passengers of plane 8 take the bus
+Airplane 0 arrives
+Platform is full: Rest of passengers of plane 0 take the bus
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
 Airplane 9 arrives
-1009125 enqueued to queue
-Passenger 1009125 of airplane 9 arrives to platform
-1009126 enqueued to queue
-Passenger 1009126 of airplane 9 arrives to platform
 Platform is full: Rest of passengers of plane 9 take the bus
-Airplane 1 arrives
-Platform is full: Rest of passengers of plane 1 take the bus
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004027 from the platform
+Taxi driver 0 picked up client 1002023 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1004028 from the platform
+Taxi driver 1 picked up client 1002024 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1002025 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004029 from the platform
+Taxi driver 0 picked up client 1002026 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1004030 from the platform
+Taxi driver 1 picked up client 1002027 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1004028 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1004029 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1004030 from the platform
 Taxi driver 0 arrives
 Taxi driver 0 picked up client 1004031 from the platform
 Taxi driver 1 arrives
 Taxi driver 1 picked up client 1004032 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004033 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1004034 from the platform
-Airplane 0 arrives
+Taxi driver 0 picked up client 1007033 from the platform
+Airplane 1 arrives
+1001123 enqueued to queue
+Passenger 1001123 of airplane 1 arrives to platform
+1001124 enqueued to queue
+Passenger 1001124 of airplane 1 arrives to platform
+1001125 enqueued to queue
+Passenger 1001125 of airplane 1 arrives to platform
+1001126 enqueued to queue
+Passenger 1001126 of airplane 1 arrives to platform
+1001127 enqueued to queue
+Passenger 1001127 of airplane 1 arrives to platform
+1001128 enqueued to queue
+Passenger 1001128 of airplane 1 arrives to platform
+1001129 enqueued to queue
+Passenger 1001129 of airplane 1 arrives to platform
 Airplane 3 arrives
-1000127 enqueued to queue
-Passenger 1000127 of airplane 0 arrives to platform
-1000128 enqueued to queue
-Passenger 1000128 of airplane 0 arrives to platform
-1000129 enqueued to queue
-Passenger 1000129 of airplane 0 arrives to platform
-1000130 enqueued to queue
-Passenger 1000130 of airplane 0 arrives to platform
-1000131 enqueued to queue
-Passenger 1000131 of airplane 0 arrives to platform
-1000132 enqueued to queue
-Passenger 1000132 of airplane 0 arrives to platform
+1003130 enqueued to queue
+Passenger 1003130 of airplane 3 arrives to platform
+1003131 enqueued to queue
+Passenger 1003131 of airplane 3 arrives to platform
+1003132 enqueued to queue
+Passenger 1003132 of airplane 3 arrives to platform
 1003133 enqueued to queue
 Passenger 1003133 of airplane 3 arrives to platform
+Platform is full: Rest of passengers of plane 3 take the bus
+Airplane 5 arrives
+Platform is full: Rest of passengers of plane 5 take the bus
+Airplane 2 arrives
+Platform is full: Rest of passengers of plane 2 take the bus
+Airplane 4 arrives
+Platform is full: Rest of passengers of plane 4 take the bus
+Airplane 7 arrives
+Platform is full: Rest of passengers of plane 7 take the bus
+Airplane 8 arrives
+Platform is full: Rest of passengers of plane 8 take the bus
+Airplane 0 arrives
+Platform is full: Rest of passengers of plane 0 take the bus
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
+Airplane 9 arrives
+Platform is full: Rest of passengers of plane 9 take the bus
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1007034 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1007035 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1007036 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1007037 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1007038 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1008039 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1008040 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1008041 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1008042 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1008043 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1008044 from the platform
+Airplane 3 arrives
 1003134 enqueued to queue
 Passenger 1003134 of airplane 3 arrives to platform
-Platform is full: Rest of passengers of plane 3 take the bus
+1003135 enqueued to queue
+Passenger 1003135 of airplane 3 arrives to platform
+1003136 enqueued to queue
+Passenger 1003136 of airplane 3 arrives to platform
+1003137 enqueued to queue
+Passenger 1003137 of airplane 3 arrives to platform
+1003138 enqueued to queue
+Passenger 1003138 of airplane 3 arrives to platform
+Airplane 1 arrives
+1003139 enqueued to queue
+Passenger 1003139 of airplane 3 arrives to platform
+Airplane 5 arrives
+1003140 enqueued to queue
+Passenger 1003140 of airplane 3 arrives to platform
+1003141 enqueued to queue
+Passenger 1003141 of airplane 3 arrives to platform
+1005142 enqueued to queue
+Passenger 1005142 of airplane 5 arrives to platform
+1005143 enqueued to queue
+Passenger 1005143 of airplane 5 arrives to platform
+1001144 enqueued to queue
+Passenger 1001144 of airplane 1 arrives to platform
+Platform is full: Rest of passengers of plane 1 take the bus
+Platform is full: Rest of passengers of plane 5 take the bus
 Airplane 2 arrives
 Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 8 arrives
-Platform is full: Rest of passengers of plane 8 take the bus
-Airplane 5 arrives
-Platform is full: Rest of passengers of plane 5 take the bus
+Airplane 4 arrives
+Platform is full: Rest of passengers of plane 4 take the bus
 Airplane 7 arrives
 Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1006035 from the platform
-Airplane 6 arrives
-1006135 enqueued to queue
-Passenger 1006135 of airplane 6 arrives to platform
-Platform is full: Rest of passengers of plane 6 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006036 from the platform
-Airplane 4 arrives
-1004136 enqueued to queue
-Passenger 1004136 of airplane 4 arrives to platform
-Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1006037 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006038 from the platform
-Airplane 9 arrives
-1009137 enqueued to queue
-Passenger 1009137 of airplane 9 arrives to platform
-1009138 enqueued to queue
-Passenger 1009138 of airplane 9 arrives to platform
-Platform is full: Rest of passengers of plane 9 take the bus
-Airplane 1 arrives
-Platform is full: Rest of passengers of plane 1 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006039 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1007040 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1007041 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1007042 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1007043 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1007044 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1007045 from the platform
+Airplane 8 arrives
+Platform is full: Rest of passengers of plane 8 take the bus
 Airplane 0 arrives
+Platform is full: Rest of passengers of plane 0 take the bus
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
+Airplane 9 arrives
+Platform is full: Rest of passengers of plane 9 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1008045 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000046 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000047 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000048 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000049 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000050 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000051 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000052 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1006053 from the platform
 Airplane 3 arrives
-1000139 enqueued to queue
-Passenger 1000139 of airplane 0 arrives to platform
-1000140 enqueued to queue
-Passenger 1000140 of airplane 0 arrives to platform
-1000141 enqueued to queue
-Passenger 1000141 of airplane 0 arrives to platform
-1000142 enqueued to queue
-Passenger 1000142 of airplane 0 arrives to platform
-1000143 enqueued to queue
-Passenger 1000143 of airplane 0 arrives to platform
-1000144 enqueued to queue
-Passenger 1000144 of airplane 0 arrives to platform
 1003145 enqueued to queue
 Passenger 1003145 of airplane 3 arrives to platform
-Platform is full: Rest of passengers of plane 3 take the bus
+1003146 enqueued to queue
+Airplane 1 arrives
+Passenger 1003146 of airplane 3 arrives to platform
 Airplane 2 arrives
-Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 8 arrives
-Platform is full: Rest of passengers of plane 8 take the bus
+1003147 enqueued to queue
+Passenger 1003147 of airplane 3 arrives to platform
 Airplane 5 arrives
+1003148 enqueued to queue
+Passenger 1003148 of airplane 3 arrives to platform
+1003149 enqueued to queue
+Passenger 1003149 of airplane 3 arrives to platform
+1003150 enqueued to queue
+Passenger 1003150 of airplane 3 arrives to platform
+1003151 enqueued to queue
+Passenger 1003151 of airplane 3 arrives to platform
+1001152 enqueued to queue
+Passenger 1001152 of airplane 1 arrives to platform
+Airplane 4 arrives
+1005153 enqueued to queue
+Platform is full: Rest of passengers of plane 4 take the bus
+Passenger 1005153 of airplane 5 arrives to platform
 Platform is full: Rest of passengers of plane 5 take the bus
 Airplane 7 arrives
 Platform is full: Rest of passengers of plane 7 take the bus
-Airplane 6 arrives
-Platform is full: Rest of passengers of plane 6 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008046 from the platform
-1000146 enqueued to queue
-Passenger 1000146 of airplane 0 arrives to platform
-Platform is full: Rest of passengers of plane 0 take the bus
-Airplane 4 arrives
-Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008047 from the platform
-Airplane 9 arrives
-1009147 enqueued to queue
-Passenger 1009147 of airplane 9 arrives to platform
-Platform is full: Rest of passengers of plane 9 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008048 from the platform
-Airplane 1 arrives
-1001148 enqueued to queue
-Passenger 1001148 of airplane 1 arrives to platform
-Platform is full: Rest of passengers of plane 1 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008049 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008050 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008051 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008052 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009053 from the platform
-Airplane 5 arrives
 Airplane 8 arrives
-Airplane 2 arrives
-1005149 enqueued to queue
-Passenger 1005149 of airplane 5 arrives to platform
-1008150 enqueued to queue
-Passenger 1008150 of airplane 8 arrives to platform
-1008151 enqueued to queue
-Passenger 1008151 of airplane 8 arrives to platform
-1008152 enqueued to queue
-Passenger 1008152 of airplane 8 arrives to platform
-Airplane 3 arrives
-1002153 enqueued to queue
-Passenger 1002153 of airplane 2 arrives to platform
-Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 7 arrives
-Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009054 from the platform
-1008154 enqueued to queue
-Passenger 1008154 of airplane 8 arrives to platform
 Platform is full: Rest of passengers of plane 8 take the bus
-Airplane 6 arrives
-Platform is full: Rest of passengers of plane 6 take the bus
 Airplane 0 arrives
 Platform is full: Rest of passengers of plane 0 take the bus
-Airplane 4 arrives
-Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009055 from the platform
-1003155 enqueued to queue
-Passenger 1003155 of airplane 3 arrives to platform
-Platform is full: Rest of passengers of plane 3 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009056 from the platform
-1005156 enqueued to queue
-Passenger 1005156 of airplane 5 arrives to platform
-Platform is full: Rest of passengers of plane 5 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009057 from the platform
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
 Airplane 9 arrives
-1009157 enqueued to queue
-Passenger 1009157 of airplane 9 arrives to platform
 Platform is full: Rest of passengers of plane 9 take the bus
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009058 from the platform
-Airplane 1 arrives
-1001158 enqueued to queue
-Passenger 1001158 of airplane 1 arrives to platform
+Taxi driver 1 picked up client 1006054 from the platform
+1003154 enqueued to queue
+Passenger 1003154 of airplane 3 arrives to platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1006055 from the platform
+1002155 enqueued to queue
+Passenger 1002155 of airplane 2 arrives to platform
+Platform is full: Rest of passengers of plane 2 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1006056 from the platform
+1001156 enqueued to queue
+Passenger 1001156 of airplane 1 arrives to platform
 Platform is full: Rest of passengers of plane 1 take the bus
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009059 from the platform
+Taxi driver 0 picked up client 1006057 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009060 from the platform
+Taxi driver 1 picked up client 1006058 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009061 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1005062 from the platform
+Taxi driver 0 picked up client 1006059 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005063 from the platform
+Taxi driver 1 picked up client 1006060 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1005064 from the platform
-Airplane 2 arrives
-1002159 enqueued to queue
-Passenger 1002159 of airplane 2 arrives to platform
-1002160 enqueued to queue
-Passenger 1002160 of airplane 2 arrives to platform
-1002161 enqueued to queue
-Passenger 1002161 of airplane 2 arrives to platform
-1002162 enqueued to queue
-Passenger 1002162 of airplane 2 arrives to platform
-1002163 enqueued to queue
-Passenger 1002163 of airplane 2 arrives to platform
-1002164 enqueued to queue
-Passenger 1002164 of airplane 2 arrives to platform
-Platform is full: Rest of passengers of plane 2 take the bus
+Taxi driver 0 picked up client 1006061 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1009062 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1009063 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1009064 from the platform
+Airplane 4 arrives
+Airplane 5 arrives
+1004157 enqueued to queue
+Passenger 1004157 of airplane 4 arrives to platform
+1004158 enqueued to queue
+Passenger 1004158 of airplane 4 arrives to platform
+1004159 enqueued to queue
+Passenger 1004159 of airplane 4 arrives to platform
+1004160 enqueued to queue
+Passenger 1004160 of airplane 4 arrives to platform
+1004161 enqueued to queue
+Passenger 1004161 of airplane 4 arrives to platform
+1004162 enqueued to queue
+Passenger 1004162 of airplane 4 arrives to platform
+1004163 enqueued to queue
+Passenger 1004163 of airplane 4 arrives to platform
 Airplane 7 arrives
-Platform is full: Rest of passengers of plane 7 take the bus
 Airplane 8 arrives
 Platform is full: Rest of passengers of plane 8 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005065 from the platform
-Airplane 6 arrives
-1006165 enqueued to queue
-Passenger 1006165 of airplane 6 arrives to platform
-Platform is full: Rest of passengers of plane 6 take the bus
+1005164 enqueued to queue
+Passenger 1005164 of airplane 5 arrives to platform
+Platform is full: Rest of passengers of plane 5 take the bus
 Airplane 0 arrives
 Platform is full: Rest of passengers of plane 0 take the bus
-Airplane 4 arrives
-Platform is full: Rest of passengers of plane 4 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1005066 from the platform
-Airplane 3 arrives
-1003166 enqueued to queue
-Passenger 1003166 of airplane 3 arrives to platform
-Platform is full: Rest of passengers of plane 3 take the bus
-Airplane 5 arrives
-Platform is full: Rest of passengers of plane 5 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005067 from the platform
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
 Airplane 9 arrives
-1009167 enqueued to queue
-Passenger 1009167 of airplane 9 arrives to platform
 Platform is full: Rest of passengers of plane 9 take the bus
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1009065 from the platform
+1007165 enqueued to queue
+Passenger 1007165 of airplane 7 arrives to platform
+Platform is full: Rest of passengers of plane 7 take the bus
+Airplane 3 arrives
+Platform is full: Rest of passengers of plane 3 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1009066 from the platform
+Airplane 2 arrives
+1002166 enqueued to queue
+Passenger 1002166 of airplane 2 arrives to platform
+Platform is full: Rest of passengers of plane 2 take the bus
 Airplane 1 arrives
 Platform is full: Rest of passengers of plane 1 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1005068 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000069 from the platform
+Taxi driver 1 picked up client 1009067 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000070 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003071 from the platform
+Taxi driver 0 picked up client 1001068 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003072 from the platform
+Taxi driver 1 picked up client 1001069 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003073 from the platform
+Taxi driver 0 picked up client 1001070 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001071 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003074 from the platform
-Airplane 2 arrives
-1002168 enqueued to queue
-Passenger 1002168 of airplane 2 arrives to platform
-1002169 enqueued to queue
-Passenger 1002169 of airplane 2 arrives to platform
-1002170 enqueued to queue
-Passenger 1002170 of airplane 2 arrives to platform
-1002171 enqueued to queue
-Passenger 1002171 of airplane 2 arrives to platform
-1002172 enqueued to queue
-Passenger 1002172 of airplane 2 arrives to platform
-1002173 enqueued to queue
-Passenger 1002173 of airplane 2 arrives to platform
-1002174 enqueued to queue
-Passenger 1002174 of airplane 2 arrives to platform
-Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 7 arrives
-Platform is full: Rest of passengers of plane 7 take the bus
+Taxi driver 1 picked up client 1001072 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001073 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1001074 from the platform
+Airplane 4 arrives
+1004167 enqueued to queue
+Airplane 0 arrives
+Passenger 1004167 of airplane 4 arrives to platform
+1000168 enqueued to queue
+Passenger 1000168 of airplane 0 arrives to platform
+1000169 enqueued to queue
+Passenger 1000169 of airplane 0 arrives to platform
+1000170 enqueued to queue
+Passenger 1000170 of airplane 0 arrives to platform
+1000171 enqueued to queue
+Passenger 1000171 of airplane 0 arrives to platform
+1000172 enqueued to queue
+Passenger 1000172 of airplane 0 arrives to platform
+1000173 enqueued to queue
+Passenger 1000173 of airplane 0 arrives to platform
+1000174 enqueued to queue
+Passenger 1000174 of airplane 0 arrives to platform
+Platform is full: Rest of passengers of plane 0 take the bus
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
+Platform is full: Rest of passengers of plane 4 take the bus
+Airplane 5 arrives
+Platform is full: Rest of passengers of plane 5 take the bus
 Airplane 8 arrives
 Platform is full: Rest of passengers of plane 8 take the bus
+Airplane 9 arrives
+Platform is full: Rest of passengers of plane 9 take the bus
+Airplane 7 arrives
+Platform is full: Rest of passengers of plane 7 take the bus
 Taxi driver 0 arrives
 Taxi driver 0 picked up client 1003075 from the platform
-Airplane 6 arrives
-1006175 enqueued to queue
-Passenger 1006175 of airplane 6 arrives to platform
-Platform is full: Rest of passengers of plane 6 take the bus
-Airplane 0 arrives
-Platform is full: Rest of passengers of plane 0 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000076 from the platform
-Airplane 4 arrives
-1004176 enqueued to queue
-Passenger 1004176 of airplane 4 arrives to platform
-Platform is full: Rest of passengers of plane 4 take the bus
 Airplane 3 arrives
+1003175 enqueued to queue
+Passenger 1003175 of airplane 3 arrives to platform
 Platform is full: Rest of passengers of plane 3 take the bus
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000077 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000078 from the platform
-Airplane 5 arrives
-1005177 enqueued to queue
-Passenger 1005177 of airplane 5 arrives to platform
-1005178 enqueued to queue
-Passenger 1005178 of airplane 5 arrives to platform
-Platform is full: Rest of passengers of plane 5 take the bus
-Airplane 9 arrives
-Platform is full: Rest of passengers of plane 9 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000079 from the platform
+Taxi driver 1 picked up client 1003076 from the platform
+Airplane 2 arrives
+1002176 enqueued to queue
+Passenger 1002176 of airplane 2 arrives to platform
+Platform is full: Rest of passengers of plane 2 take the bus
 Airplane 1 arrives
-1001179 enqueued to queue
-Passenger 1001179 of airplane 1 arrives to platform
 Platform is full: Rest of passengers of plane 1 take the bus
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004080 from the platform
+Taxi driver 0 picked up client 1003077 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000081 from the platform
+Taxi driver 1 picked up client 1003078 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001082 from the platform
+Taxi driver 0 picked up client 1003079 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1004083 from the platform
+Taxi driver 1 picked up client 1003080 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001084 from the platform
-Airplane 2 arrives
-1002180 enqueued to queue
-Passenger 1002180 of airplane 2 arrives to platform
-1002181 enqueued to queue
-Passenger 1002181 of airplane 2 arrives to platform
-1002182 enqueued to queue
-Passenger 1002182 of airplane 2 arrives to platform
-1002183 enqueued to queue
-Passenger 1002183 of airplane 2 arrives to platform
-1002184 enqueued to queue
-Passenger 1002184 of airplane 2 arrives to platform
-Platform is full: Rest of passengers of plane 2 take the bus
+Taxi driver 0 picked up client 1003081 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1003082 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1003083 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005084 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005085 from the platform
+Airplane 0 arrives
+Airplane 6 arrives
+1000177 enqueued to queue
+Passenger 1000177 of airplane 0 arrives to platform
+1000178 enqueued to queue
+Passenger 1000178 of airplane 0 arrives to platform
+1000179 enqueued to queue
+Passenger 1000179 of airplane 0 arrives to platform
+1000180 enqueued to queue
+Passenger 1000180 of airplane 0 arrives to platform
+1000181 enqueued to queue
+Passenger 1000181 of airplane 0 arrives to platform
+1006182 enqueued to queue
+Airplane 4 arrives
+Passenger 1006182 of airplane 6 arrives to platform
+Airplane 8 arrives
+1008183 enqueued to queue
+Passenger 1008183 of airplane 8 arrives to platform
+Airplane 5 arrives
+1006184 enqueued to queue
+Passenger 1006184 of airplane 6 arrives to platform
+1004185 enqueued to queue
+Passenger 1004185 of airplane 4 arrives to platform
+Platform is full: Rest of passengers of plane 4 take the bus
+Airplane 9 arrives
+Platform is full: Rest of passengers of plane 9 take the bus
 Airplane 7 arrives
 Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001085 from the platform
-Airplane 8 arrives
-1008185 enqueued to queue
-Passenger 1008185 of airplane 8 arrives to platform
-Platform is full: Rest of passengers of plane 8 take the bus
-Airplane 6 arrives
-Platform is full: Rest of passengers of plane 6 take the bus
-Airplane 0 arrives
-Platform is full: Rest of passengers of plane 0 take the bus
-Airplane 4 arrives
-Platform is full: Rest of passengers of plane 4 take the bus
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001086 from the platform
+Taxi driver 0 picked up client 1005086 from the platform
+1008186 enqueued to queue
+Passenger 1008186 of airplane 8 arrives to platform
+Platform is full: Rest of passengers of plane 8 take the bus
 Airplane 3 arrives
-1003186 enqueued to queue
-Passenger 1003186 of airplane 3 arrives to platform
 Platform is full: Rest of passengers of plane 3 take the bus
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001087 from the platform
-Airplane 5 arrives
+Taxi driver 1 picked up client 1005087 from the platform
 1005187 enqueued to queue
 Passenger 1005187 of airplane 5 arrives to platform
 Platform is full: Rest of passengers of plane 5 take the bus
-Airplane 9 arrives
-Platform is full: Rest of passengers of plane 9 take the bus
+Airplane 2 arrives
+Platform is full: Rest of passengers of plane 2 take the bus
 Airplane 1 arrives
 Platform is full: Rest of passengers of plane 1 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008088 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008089 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008090 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008091 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008092 from the platform
-Airplane 2 arrives
-1002188 enqueued to queue
-Passenger 1002188 of airplane 2 arrives to platform
-1002189 enqueued to queue
-Passenger 1002189 of airplane 2 arrives to platform
-1002190 enqueued to queue
-Passenger 1002190 of airplane 2 arrives to platform
-1002191 enqueued to queue
-Passenger 1002191 of airplane 2 arrives to platform
-1002192 enqueued to queue
-Passenger 1002192 of airplane 2 arrives to platform
-Platform is full: Rest of passengers of plane 2 take the bus
-Airplane 7 arrives
-Platform is full: Rest of passengers of plane 7 take the bus
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008093 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008094 from the platform
-Airplane 8 arrives
-1008193 enqueued to queue
-Passenger 1008193 of airplane 8 arrives to platform
-1008194 enqueued to queue
-Passenger 1008194 of airplane 8 arrives to platform
-Platform is full: Rest of passengers of plane 8 take the bus
-Airplane 6 arrives
+Taxi driver 1 picked up client 1005088 from the platform
+1006188 enqueued to queue
+Passenger 1006188 of airplane 6 arrives to platform
 Platform is full: Rest of passengers of plane 6 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005089 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005090 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1002091 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1002092 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1002093 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1002094 from the platform
 Airplane 0 arrives
-Platform is full: Rest of passengers of plane 0 take the bus
+1000189 enqueued to queue
+Passenger 1000189 of airplane 0 arrives to platform
+1000190 enqueued to queue
+Passenger 1000190 of airplane 0 arrives to platform
+1000191 enqueued to queue
+Passenger 1000191 of airplane 0 arrives to platform
+1000192 enqueued to queue
+Passenger 1000192 of airplane 0 arrives to platform
+1000193 enqueued to queue
+Passenger 1000193 of airplane 0 arrives to platform
 Airplane 4 arrives
+1004194 enqueued to queue
+Passenger 1004194 of airplane 4 arrives to platform
 Platform is full: Rest of passengers of plane 4 take the bus
-Airplane 3 arrives
-Platform is full: Rest of passengers of plane 3 take the bus
+Airplane 9 arrives
+Platform is full: Rest of passengers of plane 9 take the bus
 Taxi driver 0 arrives
 Taxi driver 0 picked up client 1002095 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002096 from the platform
+Taxi driver 1 picked up client 1004096 from the platform
+Airplane 7 arrives
+1007195 enqueued to queue
+Passenger 1007195 of airplane 7 arrives to platform
+1007196 enqueued to queue
+Passenger 1007196 of airplane 7 arrives to platform
+Platform is full: Rest of passengers of plane 7 take the bus
+Airplane 8 arrives
+Platform is full: Rest of passengers of plane 8 take the bus
+Airplane 3 arrives
+Platform is full: Rest of passengers of plane 3 take the bus
 Airplane 5 arrives
-1005195 enqueued to queue
-Passenger 1005195 of airplane 5 arrives to platform
-1005196 enqueued to queue
-Passenger 1005196 of airplane 5 arrives to platform
 Platform is full: Rest of passengers of plane 5 take the bus
-Airplane 9 arrives
-Platform is full: Rest of passengers of plane 9 take the bus
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1004097 from the platform
+Airplane 2 arrives
+1002197 enqueued to queue
+Passenger 1002197 of airplane 2 arrives to platform
+Platform is full: Rest of passengers of plane 2 take the bus
 Airplane 1 arrives
 Platform is full: Rest of passengers of plane 1 take the bus
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002097 from the platform
+Airplane 6 arrives
+Platform is full: Rest of passengers of plane 6 take the bus
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002098 from the platform
+Taxi driver 1 picked up client 1004098 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002099 from the platform
+Taxi driver 0 picked up client 1004099 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002100 from the platform
+Taxi driver 1 picked up client 1004100 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002101 from the platform
+Taxi driver 0 picked up client 1004101 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002102 from the platform
+Taxi driver 1 picked up client 1004102 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002103 from the platform
+Taxi driver 0 picked up client 1007103 from the platform
 Taxi driver 1 arrives
 Taxi driver 1 picked up client 1007104 from the platform
 Taxi driver 0 arrives
@@ -803,148 +797,186 @@ Taxi driver 1 picked up client 1007106 from the platform
 Taxi driver 0 arrives
 Taxi driver 0 picked up client 1007107 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006108 from the platform
+Taxi driver 1 picked up client 1007108 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004109 from the platform
+Taxi driver 0 picked up client 1007109 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009110 from the platform
+Taxi driver 1 picked up client 1007110 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001111 from the platform
+Taxi driver 0 picked up client 1008111 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1008112 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005112 from the platform
+Taxi driver 1 picked up client 1001113 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1007113 from the platform
+Taxi driver 0 picked up client 1001114 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006114 from the platform
+Taxi driver 1 picked up client 1001115 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004115 from the platform
+Taxi driver 0 picked up client 1001116 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009116 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001117 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003118 from the platform
+Taxi driver 1 picked up client 1001117 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003119 from the platform
+Taxi driver 1 picked up client 1001118 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003120 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003121 from the platform
+Taxi driver 0 picked up client 1003119 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1003122 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1006123 from the platform
+Taxi driver 1 picked up client 1003120 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006124 from the platform
+Taxi driver 1 picked up client 1003121 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009125 from the platform
+Taxi driver 0 picked up client 1003122 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009126 from the platform
+Taxi driver 1 picked up client 1001123 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000127 from the platform
+Taxi driver 0 picked up client 1001124 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000128 from the platform
+Taxi driver 1 picked up client 1001125 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000129 from the platform
+Taxi driver 0 picked up client 1001126 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000130 from the platform
+Taxi driver 1 picked up client 1001127 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000131 from the platform
+Taxi driver 0 picked up client 1001128 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000132 from the platform
+Taxi driver 1 picked up client 1001129 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1003130 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1003131 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1003132 from the platform
 Taxi driver 0 arrives
 Taxi driver 0 picked up client 1003133 from the platform
 Taxi driver 1 arrives
 Taxi driver 1 picked up client 1003134 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1006135 from the platform
+Taxi driver 0 picked up client 1003135 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1004136 from the platform
+Taxi driver 1 picked up client 1003136 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009137 from the platform
+Taxi driver 1 picked up client 1003137 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1009138 from the platform
+Taxi driver 0 picked up client 1003138 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000139 from the platform
+Taxi driver 0 picked up client 1003139 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000140 from the platform
+Taxi driver 1 picked up client 1003140 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000141 from the platform
+Taxi driver 0 picked up client 1003141 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000142 from the platform
+Taxi driver 0 picked up client 1005142 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1000143 from the platform
+Taxi driver 1 picked up client 1005143 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000144 from the platform
+Taxi driver 0 picked up client 1001144 from the platform
 Taxi driver 1 arrives
 Taxi driver 1 picked up client 1003145 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1000146 from the platform
+Taxi driver 0 picked up client 1003146 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009147 from the platform
+Taxi driver 1 picked up client 1003147 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001148 from the platform
+Taxi driver 0 picked up client 1003148 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005149 from the platform
+Taxi driver 1 picked up client 1003149 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008150 from the platform
+Taxi driver 0 picked up client 1003150 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008151 from the platform
+Taxi driver 1 picked up client 1003151 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1008152 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002153 from the platform
+Taxi driver 0 picked up client 1001152 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1008154 from the platform
+Taxi driver 1 picked up client 1005153 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003155 from the platform
+Taxi driver 0 picked up client 1003154 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005156 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009157 from the platform
+Taxi driver 1 picked up client 1002155 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1001158 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002159 from the platform
-Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002160 from the platform
+Taxi driver 0 picked up client 1001156 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002161 from the platform
+Taxi driver 0 picked up client 1004157 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002162 from the platform
+Taxi driver 1 picked up client 1004158 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002163 from the platform
+Taxi driver 0 picked up client 1004159 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1004160 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002164 from the platform
+Taxi driver 1 picked up client 1004161 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1006165 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1003166 from the platform
+Taxi driver 0 picked up client 1004162 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1009167 from the platform
+Taxi driver 1 picked up client 1004163 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005164 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002168 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002169 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002170 from the platform
+Taxi driver 1 picked up client 1007165 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002171 from the platform
+Taxi driver 1 picked up client 1002166 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002172 from the platform
+Taxi driver 0 picked up client 1004167 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000168 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1002173 from the platform
-Taxi driver 0 arrives
-Taxi driver 0 picked up client 1002174 from the platform
+Taxi driver 1 picked up client 1000169 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1006175 from the platform
+Taxi driver 1 picked up client 1000170 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1004176 from the platform
+Taxi driver 0 picked up client 1000171 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1005177 from the platform
+Taxi driver 1 picked up client 1000172 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 picked up client 1005178 from the platform
+Taxi driver 0 picked up client 1000173 from the platform
 Taxi driver 1 arrives
-Taxi driver 1 picked up client 1001179 from the platform
+Taxi driver 1 picked up client 1000174 from the platform
 Taxi driver 0 arrives
-Taxi driver 0 p
+Taxi driver 0 picked up client 1003175 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1002176 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000177 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000178 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000179 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000180 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000181 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1006182 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1008183 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1006184 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1004185 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1008186 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005187 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1006188 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000189 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000190 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000191 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1000192 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1000193 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1004194 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1007195 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1007196 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1002197 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 waits for passengers to enter the platform
+Taxi driver 0 arrives
+Taxi driver 0 waits for passengers to enter the platform
