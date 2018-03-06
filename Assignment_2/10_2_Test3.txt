@@ -1,0 +1,221 @@
+You entered: 10 airplanes per hour
+You entered: 2 taxis
+Creating airplane thread 0
+Creating airplane thread 1
+Airplane 0 arrives
+Creating airplane thread 2
+Airplane 1 arrives
+Creating airplane thread 3
+Airplane 2 arrives
+Creating airplane thread 4
+Airplane 3 arrives
+Creating airplane thread 5
+Airplane 4 arrives
+Creating airplane thread 6
+Airplane 5 arrives
+Creating airplane thread 7
+Airplane 6 arrives
+Creating airplane thread 8
+Airplane 7 arrives
+Creating airplane thread 9
+Airplane 8 arrives
+Creating taxis thread 0
+Airplane 9 arrives
+Creating taxis thread 1
+Taxi driver 0 arrives
+Taxi driver 0 waits for passengers to enter the platform
+1000001 enqueued to queue
+Passenger 1000001 of airplane 0 arrives to platform
+Taxi driver 1 arrives
+1001002 enqueued to queue
+Passenger 1001002 of airplane 1 arrives to platform
+1001003 enqueued to queue
+Passenger 1001003 of airplane 1 arrives to platform
+1001004 enqueued to queue
+Passenger 1001004 of airplane 1 arrives to platform
+Taxi driver 0 picked up client 1000001 from the platform
+1001005 enqueued to queue
+Passenger 1001005 of airplane 1 arrives to platform
+1001006 enqueued to queue
+Passenger 1001006 of airplane 1 arrives to platform
+1001007 enqueued to queue
+Passenger 1001007 of airplane 1 arrives to platform
+1005008 enqueued to queue
+Passenger 1005008 of airplane 5 arrives to platform
+1005009 enqueued to queue
+Passenger 1005009 of airplane 5 arrives to platform
+1005010 enqueued to queue
+Passenger 1005010 of airplane 5 arrives to platform
+1005011 enqueued to queue
+Passenger 1005011 of airplane 5 arrives to platform
+1005012 enqueued to queue
+Passenger 1005012 of airplane 5 arrives to platform
+Taxi driver 1 picked up client 1000001 from the platform
+1002013 enqueued to queue
+Passenger 1002013 of airplane 2 arrives to platform
+1002014 enqueued to queue
+Passenger 1002014 of airplane 2 arrives to platform
+1002015 enqueued to queue
+Passenger 1002015 of airplane 2 arrives to platform
+1006016 enqueued to queue
+Passenger 1006016 of airplane 6 arrives to platform
+1007017 enqueued to queue
+Passenger 1007017 of airplane 7 arrives to platform
+1007018 enqueued to queue
+Passenger 1007018 of airplane 7 arrives to platform
+1007019 enqueued to queue
+Passenger 1007019 of airplane 7 arrives to platform
+1004020 enqueued to queue
+Passenger 1004020 of airplane 4 arrives to platform
+1007021 enqueued to queue
+Passenger 1007021 of airplane 7 arrives to platform
+1007022 enqueued to queue
+Passenger 1007022 of airplane 7 arrives to platform
+1000023 enqueued to queue
+Passenger 1000023 of airplane 0 arrives to platform
+1003024 enqueued to queue
+Passenger 1003024 of airplane 3 arrives to platform
+1003025 enqueued to queue
+Passenger 1003025 of airplane 3 arrives to platform
+1003026 enqueued to queue
+Passenger 1003026 of airplane 3 arrives to platform
+1009027 enqueued to queue
+Passenger 1009027 of airplane 9 arrives to platform
+1009028 enqueued to queue
+Passenger 1009028 of airplane 9 arrives to platform
+1009029 enqueued to queue
+Passenger 1009029 of airplane 9 arrives to platform
+1009030 enqueued to queue
+Passenger 1009030 of airplane 9 arrives to platform
+1009031 enqueued to queue
+Passenger 1009031 of airplane 9 arrives to platform
+1009032 enqueued to queue
+Passenger 1009032 of airplane 9 arrives to platform
+1004033 enqueued to queue
+Passenger 1004033 of airplane 4 arrives to platform
+1004034 enqueued to queue
+Passenger 1004034 of airplane 4 arrives to platform
+1004035 enqueued to queue
+Passenger 1004035 of airplane 4 arrives to platform
+1004036 enqueued to queue
+Passenger 1004036 of airplane 4 arrives to platform
+1004037 enqueued to queue
+Passenger 1004037 of airplane 4 arrives to platform
+1004038 enqueued to queue
+Passenger 1004038 of airplane 4 arrives to platform
+1004039 enqueued to queue
+Passenger 1004039 of airplane 4 arrives to platform
+1007040 enqueued to queue
+Passenger 1007040 of airplane 7 arrives to platform
+1007041 enqueued to queue
+Passenger 1007041 of airplane 7 arrives to platform
+1000042 enqueued to queue
+Passenger 1000042 of airplane 0 arrives to platform
+1008043 enqueued to queue
+Passenger 1008043 of airplane 8 arrives to platform
+1008044 enqueued to queue
+Passenger 1008044 of airplane 8 arrives to platform
+1008045 enqueued to queue
+Passenger 1008045 of airplane 8 arrives to platform
+1008046 enqueued to queue
+Passenger 1008046 of airplane 8 arrives to platform
+1008047 enqueued to queue
+Passenger 1008047 of airplane 8 arrives to platform
+1008048 enqueued to queue
+Passenger 1008048 of airplane 8 arrives to platform
+1008049 enqueued to queue
+Passenger 1008049 of airplane 8 arrives to platform
+1008050 enqueued to queue
+Passenger 1008050 of airplane 8 arrives to platform
+1008051 enqueued to queue
+Passenger 1008051 of airplane 8 arrives to platform
+1003052 enqueued to queue
+Passenger 1003052 of airplane 3 arrives to platform
+1003053 enqueued to queue
+Passenger 1003053 of airplane 3 arrives to platform
+1000054 enqueued to queue
+Passenger 1000054 of airplane 0 arrives to platform
+1000055 enqueued to queue
+Passenger 1000055 of airplane 0 arrives to platform
+1000056 enqueued to queue
+Passenger 1000056 of airplane 0 arrives to platform
+1000057 enqueued to queue
+Passenger 1000057 of airplane 0 arrives to platform
+1000058 enqueued to queue
+Passenger 1000058 of airplane 0 arrives to platform
+1002059 enqueued to queue
+Passenger 1002059 of airplane 2 arrives to platform
+1002060 enqueued to queue
+Passenger 1002060 of airplane 2 arrives to platform
+1002061 enqueued to queue
+Passenger 1002061 of airplane 2 arrives to platform
+1002062 enqueued to queue
+Passenger 1002062 of airplane 2 arrives to platform
+1006063 enqueued to queue
+Passenger 1006063 of airplane 6 arrives to platform
+1006064 enqueued to queue
+Passenger 1006064 of airplane 6 arrives to platform
+1006065 enqueued to queue
+Passenger 1006065 of airplane 6 arrives to platform
+1006066 enqueued to queue
+Passenger 1006066 of airplane 6 arrives to platform
+1006067 enqueued to queue
+Passenger 1006067 of airplane 6 arrives to platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001003 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1001004 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001005 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1001006 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1001007 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005008 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005009 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005010 from the platform
+Taxi driver 0 arrives
+Taxi driver 0 picked up client 1005011 from the platform
+Taxi driver 1 arrives
+Taxi driver 1 picked up client 1005012 from the platform
+Airplane 1 arrives
+1001068 enqueued to queue
+Passenger 1001068 of airplane 1 arrives to platform
+1001069 enqueued to queue
+Passenger 1001069 of airplane 1 arrives to platform
+1001070 enqueued to queue
+Airplane 5 arrives
+Passenger 1001070 of airplane 1 arrives to platform
+1001071 enqueued to queue
+Passenger 1001071 of airplane 1 arrives to platform
+1005072 enqueued to queue
+Passenger 1005072 of airplane 5 arrives to platform
+Airplane 7 arrives
+1007073 enqueued to queue
+Passenger 1007073 of airplane 7 arrives to platform
+1007074 enqueued to queue
+Passenger 1007074 of airplane 7 arrives to platform
+1007075 enqueued to queue
+Passenger 1007075 of airplane 7 arrives to platform
+1007076 enqueued to queue
+Passenger 1007076 of airplane 7 arrives to platform
+1007077 enqueued to queue
+Passenger 1007077 of airplane 7 arrives to platform
+1007078 enqueued to queue
+Passenger 1007078 of airplane 7 arrives to platform
+1007079 enqueued to queue
+Passenger 1007079 of airplane 7 arrives to platform
+Airplane 4 arrives
+1004080 enqueued to queue
+Passenger 1004080 of airplane 4 arrives to platform
+1004081 enqueued to queue
+Passenger 1004081 of airplane 4 arrives to platform
+1004082 enqueued to queue
+Passenger 1004082 of airplane 4 arrives to platform
+1004083 enqueued to queue
+Passenger 1004083 of airplane 4 arrives to platform
+1001084 enqueued to queue
+Passenger 1001084 of airplane 1 arrives to plat

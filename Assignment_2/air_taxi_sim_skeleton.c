@@ -241,6 +241,7 @@ int main(int argc, char *argv[])
         airplane_ids[i] = malloc(sizeof(int));
         *airplane_ids[i] = i;
         // Print an error if one occurs
+        printf("Creating airplane thread %d\n", i);
         if (pthread_create(&airplaneThreads[i], NULL, FnAirplane, airplane_ids[i]) != 0 ){
             printf("Error with pthread create for plane %i\n", i);
         }
@@ -250,6 +251,7 @@ int main(int argc, char *argv[])
         taxi_ids[j] = malloc(sizeof(int));
         *taxi_ids[j] = j;
         // Print an error if one occurs
+        printf("Creating taxis thread %d\n", j);
         if (pthread_create(&taxiThreads[j], NULL, FnTaxi, taxi_ids[j]) != 0 ){
             printf("Error with pthread create for taxi %i\n", j);
         }
