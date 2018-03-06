@@ -135,7 +135,7 @@ int makePassengerId(int planeId)
 void *FnAirplane(void* cl_id)
 {
     int *planeId = (int *)cl_id;
-    while( true ){
+    for(int i =0; i< 10; i++){
         printf("Airplane %d arrives\n", *planeId); 
         int randomNumberOfPassengers = (rand()%5 + 5);
         for(int i=0; i < randomNumberOfPassengers; i++){
