@@ -279,10 +279,80 @@ void accessCSCAN(int *request, int numRequest)
 //access the disk location in LOOK
 void accessLOOK(int *request, int numRequest)
 {
-    //write your logic here
+        //write your logic here
+    int requestsLargerThanStartingPoint, requestsSmallerThanStartingPoint;
+    requestsLargerThanStartingPoint = 0;
+    requestsSmallerThanStartingPoint = 0;
+
+    for(int i=0; i< numRequest; i++){
+        if(request[i] > START || request[i] == START ){
+            requestsLargerThanStartingPoint++;
+        } else 
+            requestsSmallerThanStartingPoint++;
+    }
+    int *requestsLarger = malloc((requestsLargerThanStartingPoint) * sizeof(int));
+    int *requestsSmaller = malloc((requestsSmallerThanStartingPoint) * sizeof(int));
+    
+    int largerIndex = 0;
+    int smallerIndex = 0;
+
+    for(int i=0; i< numRequest; i++){
+        if(request[i] > START || request[i] == START ){
+            requestsLarger[largerIndex] = request[i];
+            largerIndex++;
+        } else{ 
+            requestsSmaller[smallerIndex] = request[i];
+            smallerIndex++;
+        }
+    }
+
+    qsort(requestsLarger, requestsLargerThanStartingPoint, sizeof(int), cmpfunc);
+    qsort(requestsSmaller, requestsSmallerThanStartingPoint, sizeof(int), cmpfunc);
+
+    /*
+    there are 3 scenarios
+    1- we have requests larger than and less than the starting point 
+    2- We have requests only larger than the starting point
+    3 We have requests only smaller than the starting point
+
+    For 1,3 we will hit an extremity at location HIGH and LOW so build the array accordingly    
+    */
+    int sizeOfNewRequest=0;
+    int *newRequest;
+    revreseArray(requestsSmaller, 0, requestsSmallerThanStartingPoint-1);
+    
+    if(requestsLargerThanStartingPoint > 0 && requestsSmallerThanStartingPoint > 0){
+        
+        sizeOfNewRequest = numRequest;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        for (int i =0; i< requestsLargerThanStartingPoint; i++){
+            newRequest[i] = requestsLarger[i];
+        }
+        smallerIndex= 0;
+        for (int i =requestsLargerThanStartingPoint; i<sizeOfNewRequest; i++){
+            printf("%d",requestsSmaller[smallerIndex]);
+            newRequest[i] = requestsSmaller[smallerIndex];
+            smallerIndex++;
+        }
+
+    } else if (requestsLargerThanStartingPoint > 0 && requestsSmallerThanStartingPoint == 0){
+        sizeOfNewRequest = numRequest;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        for (int i =0; i< sizeOfNewRequest; i++){
+            newRequest[i] = requestsLarger[i];
+        }
+    } else if (requestsLargerThanStartingPoint == 0 && requestsSmallerThanStartingPoint > 0){
+        sizeOfNewRequest = numRequest;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        newRequest[0] = HIGH;
+        newRequest[1] = LOW;
+        for(int i=0; i< sizeOfNewRequest; i++){
+            newRequest[i] = requestsSmaller[i];
+        }
+    }
     printf("\n----------------\n");
     printf("LOOK :");
-    // printSeqNPerformance(newRequest, newCnt);
+    printSeqNPerformance(newRequest, sizeOfNewRequest);
     printf("----------------\n");
     return;
 }
@@ -291,9 +361,79 @@ void accessLOOK(int *request, int numRequest)
 void accessCLOOK(int *request, int numRequest)
 {
     //write your logic here
+    int requestsLargerThanStartingPoint, requestsSmallerThanStartingPoint;
+    requestsLargerThanStartingPoint = 0;
+    requestsSmallerThanStartingPoint = 0;
+
+    for(int i=0; i< numRequest; i++){
+        if(request[i] > START || request[i] == START ){
+            requestsLargerThanStartingPoint++;
+        } else 
+            requestsSmallerThanStartingPoint++;
+    }
+    int *requestsLarger = malloc((requestsLargerThanStartingPoint) * sizeof(int));
+    int *requestsSmaller = malloc((requestsSmallerThanStartingPoint) * sizeof(int));
+    
+    int largerIndex = 0;
+    int smallerIndex = 0;
+
+    for(int i=0; i< numRequest; i++){
+        if(request[i] > START || request[i] == START ){
+            requestsLarger[largerIndex] = request[i];
+            largerIndex++;
+        } else{ 
+            requestsSmaller[smallerIndex] = request[i];
+            smallerIndex++;
+        }
+    }
+
+    qsort(requestsLarger, requestsLargerThanStartingPoint, sizeof(int), cmpfunc);
+    qsort(requestsSmaller, requestsSmallerThanStartingPoint, sizeof(int), cmpfunc);
+
+    /*
+    there are 3 scenarios
+    1- we have requests larger than and less than the starting point 
+    2- We have requests only larger than the starting point
+    3 We have requests only smaller than the starting point
+
+    For 1,3 we will hit an extremity at location HIGH and LOW so build the array accordingly    
+    */
+    int sizeOfNewRequest=0;
+    int *newRequest;
+        
+    if(requestsLargerThanStartingPoint > 0 && requestsSmallerThanStartingPoint > 0){
+        
+        sizeOfNewRequest = numRequest + 1;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        for (int i =0; i< requestsLargerThanStartingPoint; i++){
+            newRequest[i] = requestsLarger[i];
+        }
+        newRequest[requestsLargerThanStartingPoint] = LOW;
+        
+        smallerIndex= 0;
+        for (int i =requestsLargerThanStartingPoint + 1; i<sizeOfNewRequest; i++){
+            printf("%d",requestsSmaller[smallerIndex]);
+            newRequest[i] = requestsSmaller[smallerIndex];
+            smallerIndex++;
+        }
+
+    } else if (requestsLargerThanStartingPoint > 0 && requestsSmallerThanStartingPoint == 0){
+        sizeOfNewRequest = numRequest;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        for (int i =0; i< sizeOfNewRequest; i++){
+            newRequest[i] = requestsLarger[i];
+        }
+    } else if (requestsLargerThanStartingPoint == 0 && requestsSmallerThanStartingPoint > 0){
+        sizeOfNewRequest = numRequest + 1;
+        newRequest = malloc((sizeOfNewRequest) * sizeof(int));
+        newRequest[0] = LOW;
+        for(int i=1; i< sizeOfNewRequest; i++){
+            newRequest[i] = requestsSmaller[i-1];
+        }
+    }
     printf("\n----------------\n");
     printf("CLOOK :");
-    // printSeqNPerformance(newRequest,newCnt);
+    printSeqNPerformance(newRequest,sizeOfNewRequest);
     printf("----------------\n");
     return;
 }
