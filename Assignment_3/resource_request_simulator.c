@@ -31,6 +31,7 @@ int *RESOURCE_TYPE_AVAILABILITIES;
 int *PROCESS_REQUESTS;
 
 int *HOLD;
+int *AVAIL;
 int *NEED;
 int *REQ;
 
@@ -57,32 +58,58 @@ void getUserInput()
         }
     }
 }
-
+/*three possible states
+    1- -1 if REQ > NEED, abort everything and quite all processess
+    2- 0 not safe
+    3- 1 safe
+*/
+int BankersAlgorithm(int process, int* requestVector)
+{
+    for(int i=0; i < RESOURCE_TYPES; i++){
+        if (*(requestVector+i) > *(NEED+RESOURCE_TYPES*process + i)){
+            return -1;
+        } else if (*(requestVector+i) > *(AVAIL+i)){
+            //busy waiting, step 2 of bankers algo
+            while(*(requestVector+i) > *(AVAIL+i));
+        } 
+        printf("%d\n",*(requestVector+i));
+    }
+    return true;
+}
 void *fnProcess(void* pr_id)
 {
     // Each process will be a thread:
     // - process i start
-    // - while (true) request[i,j]:
+    // - while (true) request[i]:
     //     - i is a random number from 0->remaining amount of  resources for this process
-    //     - j is the resource type
     // - boolean isSafe = BANKERS(&request, global resources in system)
     // - if isSafe{aquire resources and check for process termination}
     // - else process is blocked, continue the execution
     int *processId = (int *) pr_id;
     // while (true){
-        int requestVector[RESOURCE_TYPES];
+        int* processRequest = (int *)malloc(sizeof(int) * RESOURCE_TYPES);
         for(int i=0; i < RESOURCE_TYPES; i++){
             int remainingAmountOfResourcesForThisProcessAndResourceType = *(NEED + (*processId)*RESOURCE_TYPES + i);
-            printf("Process %d needs %d more resources of type %d", *processId, remainingAmountOfResourcesForThisProcessAndResourceType, i);
-            int i = rand() % remainingAmountOfResourcesForThisProcessAndResourceType;
+            printf("Process %d needs %d more resources of type %d\n", *processId, remainingAmountOfResourcesForThisProcessAndResourceType, i);
+            int randomRequestForResourceI = rand() % remainingAmountOfResourcesForThisProcessAndResourceType;
+            *(processRequest+i) = randomRequestForResourceI;
         }
+        //here we have a fully populated request vector, offload to banker
+        int isSafe = BankersAlgorithm(*processId, processRequest);
     // }
 }
+
+
 
 int main()
 {
     getUserInput();
-
+    
+    AVAIL =(int *)malloc(sizeof (int) * RESOURCE_TYPES);
+    for(int i=0; i< RESOURCE_TYPES; i++)
+    {
+        *(AVAIL+i) = *(RESOURCE_TYPE_AVAILABILITIES + i);
+    }
     HOLD =(int *)malloc(sizeof (int) * PROCESSESS * RESOURCE_TYPES);
     NEED =(int *)malloc(sizeof (int) * PROCESSESS * RESOURCE_TYPES);
     for(int i=0; i<PROCESSESS; i++){
