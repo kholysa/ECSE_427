@@ -5,7 +5,9 @@
     "command": "gcc",
     "isShellCommand": true,
     "args": [
-        "260606967_part2.c",
+        "-g",
+        "resource_request_simulator.c",
+        "-pthread"
     ],
     "showOutput": "always",
 }
