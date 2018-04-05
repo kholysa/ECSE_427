@@ -160,7 +160,7 @@ void *fnProcess(void* pr_id)
         for(int i=0; i < RESOURCE_TYPES; i++){
             int remainingAmountOfResourcesForThisProcessAndResourceType = *(NEED + (*processId)*RESOURCE_TYPES + i);
             printf("Process %d needs %d more resources of type %d\n", *processId, remainingAmountOfResourcesForThisProcessAndResourceType, i);
-            int randomRequestForResourceI = remainingAmountOfResourcesForThisProcessAndResourceType;
+            int randomRequestForResourceI = rand() % remainingAmountOfResourcesForThisProcessAndResourceType;
             *(processRequest+i) = randomRequestForResourceI;
         }
         //here we have a fully populated request vector, offload to banker
