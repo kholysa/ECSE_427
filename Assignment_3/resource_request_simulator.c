@@ -18,6 +18,7 @@ Each process will be a thread:
 #include <stdio.h>
 #include <pthread.h>
 #include <stdlib.h>
+#include <string.h>
 #include <unistd.h>
 #include <limits.h>
 #include <semaphore.h>
@@ -58,6 +59,47 @@ void getUserInput()
         }
     }
 }
+
+
+bool isSafe()
+{
+    int* Work;
+    bool* Finish;
+    Work = malloc(sizeof(int) * RESOURCE_TYPES);
+    memcpy(Work, AVAIL,sizeof(int) * RESOURCE_TYPES);
+    Finish = malloc(sizeof(bool) * PROCESSESS);
+    for(int i=0; i< PROCESSESS; i++){
+        *(Finish + i) = false;
+    }
+
+    for(int i=0;i<PROCESSESS;i++){
+        bool goToStep3 = true;
+        if(*(Finish + i) == true){
+            goToStep3 = false;
+        } 
+        for(int j=0;j<RESOURCE_TYPES;j++){
+            //iterate through all resources for a process
+            //if we find that finish[i] is false and NEED[i][j] <== Work[j] for all j, then step 3    
+            if (*(NEED + i*RESOURCE_TYPES + j) > *(Work+j)){
+                goToStep3 = false;
+            }  
+        }
+        if(goToStep3){
+            for(int j=0;j<RESOURCE_TYPES;j++){
+                *(Work+j) = *(Work+j) + *(HOLD + i*RESOURCE_TYPES + j);
+            }
+            *(Finish + i) = true;
+        }
+    }
+    //step 4
+    for(int i=0;i<PROCESSESS;i++){
+        if(*(Finish + i) == false){
+            return false;
+        }            
+    }
+    return true;
+}
+
 /*three possible states
     1- -1 if REQ > NEED, abort everything and quite all processess
     2- 0 not safe
@@ -65,16 +107,43 @@ void getUserInput()
 */
 int BankersAlgorithm(int process, int* requestVector)
 {
+    pthread_mutex_lock(&MUTEX);
+    
+    for(int i=0; i < RESOURCE_TYPES; i++){    
+        // printf("process %d has requested %d instances of resource %d", process, *(requestVector+i), i);
+    }
     for(int i=0; i < RESOURCE_TYPES; i++){
         if (*(requestVector+i) > *(NEED+RESOURCE_TYPES*process + i)){
+            pthread_mutex_unlock(&MUTEX);   
             return -1;
         } else if (*(requestVector+i) > *(AVAIL+i)){
             //busy waiting, step 2 of bankers algo
-            while(*(requestVector+i) > *(AVAIL+i));
-        } 
-        printf("%d\n",*(requestVector+i));
+           pthread_mutex_unlock(&MUTEX);   
+            return 0;
+        } else {
+        
+            *(AVAIL+i) = *(AVAIL+i) - *(requestVector+i); 
+            *(HOLD+process*RESOURCE_TYPES +i) = *(HOLD+process*RESOURCE_TYPES +i) + *(requestVector+i);
+            *(NEED+process*RESOURCE_TYPES +i) = *(NEED+process*RESOURCE_TYPES +i) - *(requestVector+i);
+    
+        }
+        
     }
-    return true;
+    bool safe = isSafe();
+    if (safe){
+        //grant resources, return 1
+        pthread_mutex_unlock(&MUTEX);   
+        return 1;
+
+    } else {
+         for(int i=0; i < RESOURCE_TYPES; i++){
+            *(AVAIL+i) = *(AVAIL+i) + *(requestVector+i); 
+            *(HOLD+process*RESOURCE_TYPES +i) = *(HOLD+process*RESOURCE_TYPES +i) - *(requestVector+i);
+            *(NEED+process*RESOURCE_TYPES +i) = *(NEED+process*RESOURCE_TYPES +i) + *(requestVector+i);
+         }
+        pthread_mutex_unlock(&MUTEX);           
+        return 0;
+    }
 }
 void *fnProcess(void* pr_id)
 {
@@ -86,17 +155,36 @@ void *fnProcess(void* pr_id)
     // - if isSafe{aquire resources and check for process termination}
     // - else process is blocked, continue the execution
     int *processId = (int *) pr_id;
-    // while (true){
+    while (true){
         int* processRequest = (int *)malloc(sizeof(int) * RESOURCE_TYPES);
         for(int i=0; i < RESOURCE_TYPES; i++){
             int remainingAmountOfResourcesForThisProcessAndResourceType = *(NEED + (*processId)*RESOURCE_TYPES + i);
             printf("Process %d needs %d more resources of type %d\n", *processId, remainingAmountOfResourcesForThisProcessAndResourceType, i);
-            int randomRequestForResourceI = rand() % remainingAmountOfResourcesForThisProcessAndResourceType;
+            int randomRequestForResourceI = remainingAmountOfResourcesForThisProcessAndResourceType;
             *(processRequest+i) = randomRequestForResourceI;
         }
         //here we have a fully populated request vector, offload to banker
         int isSafe = BankersAlgorithm(*processId, processRequest);
-    // }
+        printf("\nprocess Id:%d sees value %d from isSafe\n", *processId,isSafe);
+        bool done = true;
+        for(int i=0; i< RESOURCE_TYPES; i++){
+            if(*(NEED + (*processId)*RESOURCE_TYPES + i) > 0){
+                done = false;
+            }
+        }
+        if(done){
+            for(int i=0; i< RESOURCE_TYPES; i++){
+                *(AVAIL+i) = *(AVAIL+i) + *(PROCESS_REQUESTS+*processId*RESOURCE_TYPES + i); 
+                *(HOLD+*processId*RESOURCE_TYPES +i) = 0;
+                *(NEED+*processId*RESOURCE_TYPES +i) = 0;
+            }
+            printf("Process %d has completed, will kill process\n", *processId);
+            break;
+        } else {
+            printf("Process %d couldn't complete, will sleep and try again\n", *processId);
+            sleep(3);
+        }
+    }
 }
 
 
