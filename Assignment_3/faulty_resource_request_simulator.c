@@ -109,9 +109,6 @@ int BankersAlgorithm(int process, int* requestVector)
 {
     pthread_mutex_lock(&MUTEX);
     
-    for(int i=0; i < RESOURCE_TYPES; i++){    
-        // printf("process %d has requested %d instances of resource %d", process, *(requestVector+i), i);
-    }
     for(int i=0; i < RESOURCE_TYPES; i++){
         if (*(requestVector+i) > *(NEED+RESOURCE_TYPES*process + i)){
             pthread_mutex_unlock(&MUTEX);   
@@ -180,11 +177,51 @@ void *fnProcess(void* pr_id)
             break;
         } else {
             printf("Process %d couldn't complete, will sleep and try again\n", *processId);
-            sleep(1);
+            sleep(3);
         }
     }
 }
 
+void *fnFaultyThread(void* variable) {
+    while(true){
+        int victimisedResource = rand() % (RESOURCE_TYPES );
+        bool sickJokeToKillAResource = (rand() % (11)) > 5;
+        if (sickJokeToKillAResource) {
+            pthread_mutex_lock(&MUTEX);   
+            *(AVAIL + victimisedResource) = *(AVAIL + victimisedResource) -1;
+            printf("rip for resource %d\n",victimisedResource);
+            pthread_mutex_unlock(&MUTEX);   
+        }
+        sleep(10);
+    }
+}
+
+void *fnDeadlockChecker(void* variable) {
+    while(true){
+        //if for each process, need[i][j] > hold[i][j] + avail[j] DEADLOCK WILL OCCUR
+        pthread_mutex_lock(&MUTEX);   
+        int* HOLD_ALL = malloc(sizeof(int) * RESOURCE_TYPES);
+        for(int i=0; i<PROCESSESS; i++){
+            for(int j=0; j<RESOURCE_TYPES; j++){
+                *(HOLD_ALL + j) = *(HOLD_ALL + j) + *(HOLD + i*RESOURCE_TYPES + j); 
+            }
+        }
+        for(int i=0; i<PROCESSESS; i++){
+            for(int j=0; j<RESOURCE_TYPES; j++){
+                bool inevitableDeadlock =  *(NEED + i*RESOURCE_TYPES + j) >
+                    (*(HOLD_ALL + j) +
+                    *(AVAIL + j));
+                pthread_mutex_unlock(&MUTEX);   
+                    
+                if (inevitableDeadlock){
+                    printf("\n\n \tDeadlock will occur as processes request more resources, exiting...\n");
+                    exit(0);
+                }
+            }
+        }
+        sleep(10);
+    }
+}
 
 
 int main()
@@ -207,6 +244,8 @@ int main()
 
     pthread_mutex_init(&MUTEX, NULL);
     pthread_t * processThreads = malloc(sizeof(pthread_t)*PROCESSESS);
+    pthread_t faultyThread, deadlockChecker;
+    
     int *process_ids[PROCESSESS];
 
     for(int j =0; j < PROCESSESS; j++) {
@@ -218,9 +257,22 @@ int main()
             printf("Error with pthread create for process %i\n", j);
         }
     }
+
+    if (pthread_create(&faultyThread, NULL, fnFaultyThread, NULL)){
+        printf("Error with pthread create for faulty thread\n");
+    }
+
+
+    if (pthread_create(&deadlockChecker, NULL, fnDeadlockChecker, NULL)){
+        printf("Error with pthread create for deadlock checker thread\n");
+    }
+
     for(int j =0; j < PROCESSESS; j++) {
         pthread_join(processThreads[j], NULL);
     }
+    pthread_join(faultyThread, NULL);
+    pthread_join(deadlockChecker, NULL);
+
     pthread_exit(NULL);
 
     return 0;

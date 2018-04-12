@@ -6,7 +6,7 @@
     "isShellCommand": true,
     "args": [
         "-g",
-        "resource_request_simulator.c",
+        "faulty_resource_request_simulator.c",
         "-pthread"
     ],
     "showOutput": "always",
